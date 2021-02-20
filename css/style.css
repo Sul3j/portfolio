@@ -390,7 +390,7 @@ body .tools .icon {
 }
 
 body .tools .icon svg {
-  height: 80px;
+  height: 62px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -400,6 +400,46 @@ body .tools .icon svg {
 
 body .tools .icon svg path {
   fill: #fff;
+}
+
+body .tools .icon p {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+body .tools .bootstrap svg {
+  height: 74px;
+}
+
+body .tools .bootstrap p {
+  padding: 30px;
+}
+
+body .tools .git svg {
+  height: 70px;
+}
+
+body .tools .git p {
+  padding: 35px;
+}
+
+body .tools .sass p {
+  padding-top: 38px;
+}
+
+body .tools .npm svg {
+  height: 80px;
+}
+
+body .tools .github p {
+  padding-top: 40px;
+}
+
+body .tools .figma p {
+  padding-top: 40px;
 }
 
 body .projects {

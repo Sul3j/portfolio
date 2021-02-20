@@ -337,7 +337,7 @@ body{
         width: 50%;
         height: 25vh;
         svg{
-          height: 80px;
+          height: 62px;
           position: relative;
           top: 50%;
           left: 50%;
@@ -345,6 +345,55 @@ body{
           path {
             fill: #fff;
           }
+        }
+        p {
+          text-align: center;
+          padding: 20px;
+          font-family: 'Gothic A1', sans-serif;
+          font-weight: 200;
+          color: #fff;
+        }
+      }
+
+      .bootstrap{
+        svg {
+          height: 74px;
+        }
+        p {
+          padding: 30px;
+        }
+      }
+
+      .git {
+        svg {
+          height: 70px;
+        }
+        p {
+          padding: 35px;
+        }
+      }
+
+      .sass {
+        p {
+          padding-top: 38px;
+        }
+      }
+
+      .npm {
+        svg {
+          height: 80px;
+        }
+      }
+
+      .github {
+        p {
+          padding-top: 40px;
+        }
+      }
+
+      .figma {
+        p {
+          padding-top: 40px;
         }
       }
     }
