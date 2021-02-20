@@ -7,6 +7,9 @@ body{
         background-color: #fff;
         width: 100vw;
         height: 100vh;
+        .navigation-menu {
+          display: none;
+        }
         .header-logo{
             font-family: 'Gothic A1', sans-serif;
             height: 60px;
@@ -162,4 +165,72 @@ body{
             }
         }
     }
+}
+
+@media (min-width: 540px) {
+  body {
+    header {
+      .navigation {
+        display: none;
+      }
+      .header-logo {
+        width: 196px;
+        .name {
+          font-size: 22px;
+          margin-bottom: 2px;
+        }
+        .profession {
+          font-size: 20px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+      }
+      .welcome-header {
+        width: 530px;
+        h1 {
+          font-size: 50px;
+          line-height: 68px;
+        }
+      }
+      .navigation-menu {
+        display: inherit;
+        list-style: none;
+        position: absolute;
+        width: 420px;
+        left: 70%;
+        transform: translateX(-50%);
+        top: 3%;
+        li {
+          display: inline-block;
+          font-size: 20px;
+          font-family: 'Gothic A1', sans-serif;
+          margin-left: 10px;
+          font-weight: 200;
+          
+          img {
+            height: 22px;
+          }
+
+          .github-icon{
+            margin-right: 3px;
+          }
+
+          .linkedin-icon {
+            margin-left: 4px;
+          }
+        }
+      }
+      .header-logo {
+        margin-left: 0px;
+        position: relative;
+        top: 2%;
+      }
+      .hamburger {
+        .hamburger__container {
+          display: none;
+          
+        }
+      }
+    }
+  }
 }

@@ -12,6 +12,10 @@ body header {
   height: 100vh;
 }
 
+body header .navigation-menu {
+  display: none;
+}
+
 body header .header-logo {
   font-family: 'Gothic A1', sans-serif;
   height: 60px;
@@ -197,6 +201,65 @@ body header .welcome-header span {
   background-color: #000;
   color: #fff;
   padding: 3px 6px 2px 6px;
+}
+
+@media (min-width: 540px) {
+  body header .navigation {
+    display: none;
+  }
+  body header .header-logo {
+    width: 196px;
+  }
+  body header .header-logo .name {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+  body header .header-logo .profession {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  body header .welcome-header {
+    width: 530px;
+  }
+  body header .welcome-header h1 {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  body header .navigation-menu {
+    display: inherit;
+    list-style: none;
+    position: absolute;
+    width: 420px;
+    left: 70%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 3%;
+  }
+  body header .navigation-menu li {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Gothic A1', sans-serif;
+    margin-left: 10px;
+    font-weight: 200;
+  }
+  body header .navigation-menu li img {
+    height: 22px;
+  }
+  body header .navigation-menu li .github-icon {
+    margin-right: 3px;
+  }
+  body header .navigation-menu li .linkedin-icon {
+    margin-left: 4px;
+  }
+  body header .header-logo {
+    margin-left: 0px;
+    position: relative;
+    top: 2%;
+  }
+  body header .hamburger .hamburger__container {
+    display: none;
+  }
 }
 
 body .about-me {
