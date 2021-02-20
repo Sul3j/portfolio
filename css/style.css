@@ -294,7 +294,7 @@ body .skills .icon {
 }
 
 body .skills .icon svg {
-  height: 80px;
+  height: 65px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -302,16 +302,39 @@ body .skills .icon svg {
           transform: translate(-50%, -50%);
 }
 
+body .skills .icon p {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 200;
+}
+
+body .skills .typescript p {
+  padding-top: 40px;
+}
+
 body .skills .angular svg {
-  height: 100px;
+  height: 85px;
 }
 
 body .skills .javascript svg {
-  height: 90px;
+  height: 75px;
+}
+
+body .skills .javascript p {
+  padding-top: 30px;
+}
+
+body .skills .nodejs p {
+  padding-top: 40px;
 }
 
 body .skills .nestjs svg {
-  height: 95px;
+  height: 80px;
+}
+
+body .skills .postgreesql p {
+  padding-top: 35px;
 }
 
 body .tools {
