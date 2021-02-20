@@ -339,14 +339,15 @@ body .tools .tools-header h1 {
   width: 100%;
   letter-spacing: 3px;
   font-weight: 800;
+  background-color: white;
 }
 
 body .tools .tools-header h1 .first {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   width: 50%;
   text-align: right;
   letter-spacing: 3px;
@@ -357,6 +358,7 @@ body .tools .tools-header h1 .first {
 
 body .tools .tools-header h1 .second {
   padding-left: 3px;
+  color: #000;
 }
 
 body .tools .icon {

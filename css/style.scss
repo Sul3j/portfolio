@@ -284,8 +284,8 @@ body{
           .first {
             box-sizing: border-box;
             display: inline-block;
-            background-color: #fff;
-            color: #000;
+            background-color: #000;
+            color: #fff;
             width: 50%;
             text-align: right;
             letter-spacing: 3px;
@@ -295,6 +295,7 @@ body{
           }
           .second {
             padding-left: 3px;
+            color: #000;
           }
           font-family: 'Gothic A1', sans-serif;
           font-size: 32px;
@@ -302,6 +303,7 @@ body{
           width: 100%;
           letter-spacing: 3px;
           font-weight: 800;
+          background-color: white;
         }
       }
       .icon {
