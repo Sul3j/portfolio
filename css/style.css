@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  height: 200vh;
+  height: 300vh;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -243,5 +243,71 @@ body .about-me .about-me-text p {
   font-family: 'Gothic A1', sans-serif;
   margin: 30px;
   font-weight: 200;
+}
+
+body .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+body .skills .skills-header {
+  position: relative;
+  top: 2.5%;
+  padding-top: 15px;
+  width: 100%;
+}
+
+body .skills .skills-header h1 {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 32px;
+  width: 100%;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+body .skills .skills-header h1 span {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  text-align: right;
+  letter-spacing: 3px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+body .skills .icon {
+  background-color: #fff;
+  width: 50%;
+  height: 25vh;
+}
+
+body .skills .icon svg {
+  height: 80px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .skills .angular svg {
+  height: 100px;
+}
+
+body .skills .javascript svg {
+  height: 90px;
+}
+
+body .skills .nestjs svg {
+  height: 95px;
 }
 /*# sourceMappingURL=style.css.map */

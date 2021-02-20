@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-    height: 200vh;
+    height: 300vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -203,6 +203,72 @@ body{
         }
       }
     }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      width: 100vw;
+      .skills-header {
+        position: relative;
+        top: 2.5%;
+        padding-top: 15px;
+        width: 100%;
+        h1 {
+          span {
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            width: 50%;
+            text-align: right;
+            letter-spacing: 3px;
+            padding-right: 2px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+          }
+          font-family: 'Gothic A1', sans-serif;
+          font-size: 32px;
+          width: 100%;
+          letter-spacing: 3px;
+          font-weight: 800;
+        }
+      }
+      .icon {
+        background-color: #fff;
+        width: 50%;
+        height: 25vh;
+        svg{
+          height: 80px;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .angular {
+        svg {
+          height: 100px;
+          
+        }
+      }
+
+      .javascript {
+        svg {
+          height: 90px;
+        }
+      }
+
+      .nestjs {
+        svg {
+          height: 95px;
+        }
+      }
+    }
+
+    
+
+    
 
 }
 
