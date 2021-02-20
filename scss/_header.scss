@@ -1,0 +1,165 @@
+body{
+    height: 600vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    header{
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        .header-logo{
+            font-family: 'Gothic A1', sans-serif;
+            height: 60px;
+            width: 158px;
+            position: relative;
+            top: 2.5%;
+            left: 5%;
+            .name{
+                background-color: #fff;
+                margin-top: 0;
+                padding: 0;
+                height: 22px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                padding-left: 5px;
+            }
+            .profession {
+                color: #fff;
+                background-color: #000;
+                height: 28px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 28px;
+                padding-left: 3px;
+            }
+        }
+        .hamburger {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            &:focus {
+              & > .hamburger__container {
+                box-shadow: 0 0 2px 2px #51a7e8;
+              }
+            }
+          }
+          
+          .hamburger__container {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 35px;
+            height: 30px;
+            right: 3%;
+            top: 2%;
+            border: 2px solid #000;
+            padding: 10px;
+            background-color: #fff;
+            z-index: 10;
+          }
+          
+          .hamburger__bars {
+            position: absolute;
+            width: 35px;
+            height: 2px;
+            background-color: #000;
+            transition: transform 220ms ease-in-out;
+            &:before, &:after {
+              display: block;
+              position: absolute;
+              width: 35px;
+              height: 2px;
+              background-color: #000;
+              content: '';
+            }
+            &:before {
+              top: -12px;
+              transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+            }
+            &:after {
+              bottom: -12px;
+              transition: bottom 100ms 250ms ease-in, 
+                transform 220ms ease-in-out;
+            }
+          }
+          
+          .hamburger--active {
+            .hamburger__bars {
+              transform: rotate(225deg);
+              transition: transform 220ms 120ms ease-in-out;
+              &:before {
+                top: 0;
+                transition: top 100ms ease-out;
+              }
+              &:after {
+                bottom: 0;
+                transform: rotate(-90deg);
+                transition: bottom 100ms ease-out, 
+                  transform 220ms 120ms ease-in-out;
+              }
+            }
+          }
+          
+          .hamburger, .hamburger__container {
+            &:focus {
+              outline: none;
+            }
+        }
+
+        .navigation{
+          position: fixed;
+          left: 100%;
+          background-color: #fff;
+          width: 100vw;
+          height: 100vh;
+          z-index: 1;
+          transition: left .5s; 
+          ul{
+            list-style: none;
+            position: relative;
+            top: 43%;
+            transform: translateY(-50%);
+            li{
+              font-family: 'Gothic A1', sans-serif;
+              font-size: 22px;
+              text-align: center;
+              line-height: 46px;
+              font-weight: 200;
+              img{
+                margin-top: 10px;
+                height: 32px;
+              }
+              .github-icon{
+                margin-right: 5px;
+              }
+              .linkedin-icon{
+                margin-left: 5px;
+              }
+
+              
+            }
+          }
+        }
+
+        .welcome-header {
+            font-family: 'Gothic A1', sans-serif;
+            position: relative;
+            width: 316px;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+              font-size: 30px;
+            }
+            span{
+              display: inline-block;
+              background-color: #000;
+              color: #fff;
+              padding: 3px 6px 2px 6px;
+            }
+        }
+    }
+}

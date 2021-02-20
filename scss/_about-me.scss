@@ -1,0 +1,40 @@
+body {
+    .about-me {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        .about-me-header {
+          position: relative;
+          left: 50%;
+          top: 13%;
+          transform: translate(-50%, -50%);
+          width: 250px;
+          height: 80px;
+          box-sizing: border-box;
+          border: 6px solid #fff;
+          background-color: #000;
+          h1{
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Gothic A1', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            line-height: 20px;
+          }
+        }
+        .about-me-text {
+          position: relative;
+          top: 38%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: justify;
+          
+          p{
+            color: #fff;
+            font-family: 'Gothic A1', sans-serif;
+            margin: 30px;
+            font-weight: 200;
+          }
+        }
+    }
+}

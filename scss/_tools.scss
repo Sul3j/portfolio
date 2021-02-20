@@ -1,0 +1,103 @@
+body {
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        .tools-header {
+          position: relative;
+          top: 2.5%;
+          padding-top: 15px;
+          width: 100%;
+          h1 {
+            .first {
+              box-sizing: border-box;
+              display: inline-block;
+              background-color: #000;
+              color: #fff;
+              width: 50%;
+              text-align: right;
+              letter-spacing: 3px;
+              padding-right: 1px;
+              padding-top: 4px;
+              padding-bottom: 2px;
+            }
+            .second {
+              padding-left: 3px;
+              color: #000;
+            }
+            font-family: 'Gothic A1', sans-serif;
+            font-size: 32px;
+            color: #fff;
+            width: 100%;
+            letter-spacing: 3px;
+            font-weight: 800;
+            background-color: white;
+          }
+        }
+        .icon {
+          width: 50%;
+          height: 25vh;
+          svg{
+            height: 62px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            path {
+              fill: #fff;
+            }
+          }
+          p {
+            text-align: center;
+            padding: 20px;
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 200;
+            color: #fff;
+          }
+        }
+  
+        .bootstrap{
+          svg {
+            height: 74px;
+          }
+          p {
+            padding: 30px;
+          }
+        }
+  
+        .git {
+          svg {
+            height: 70px;
+          }
+          p {
+            padding: 35px;
+          }
+        }
+  
+        .sass {
+          p {
+            padding-top: 38px;
+          }
+        }
+  
+        .npm {
+          svg {
+            height: 80px;
+          }
+        }
+  
+        .github {
+          p {
+            padding-top: 40px;
+          }
+        }
+  
+        .figma {
+          p {
+            padding-top: 40px;
+          }
+        }
+      }
+}
