@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  height: 500vh;
+  height: 600vh;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -400,5 +400,85 @@ body .projects .projects-header h1 {
   font-family: 'Gothic A1', sans-serif;
   padding: 10px;
   text-align: center;
+}
+
+body .form {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+body .form .contact-me {
+  width: 300px;
+  height: 60px;
+  padding-top: 15px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .form .contact-me h1 {
+  font-family: 'Gothic A1', sans-serif;
+  color: #fff;
+  padding: 5px;
+  border: 5px solid white;
+  font-size: 32px;
+  text-align: center;
+}
+
+body .form form {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .form form .input {
+  width: 250px;
+  position: relative;
+  height: 30px;
+  background-color: #000;
+  border: 2px dashed #fff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+body .form form .text-message {
+  width: 250px;
+  position: relative;
+  height: 30px;
+  background-color: #000;
+  border: 2px dashed #fff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  height: 160px;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+body .form form .submit-button {
+  width: 200px;
+  position: relative;
+  height: 40px;
+  background-color: #000;
+  border: 3px solid #fff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+  font-family: 'Gothic A1', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
