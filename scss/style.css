@@ -495,7 +495,6 @@ body .tools .tools-header h1 {
   width: 100%;
   letter-spacing: 3px;
   font-weight: 800;
-  background-color: white;
 }
 
 body .tools .tools-header h1 .first {
@@ -513,8 +512,11 @@ body .tools .tools-header h1 .first {
 }
 
 body .tools .tools-header h1 .second {
+  display: inline-block;
   padding-left: 3px;
   color: #000;
+  background-color: #fff;
+  width: calc(50vw - 3px);
 }
 
 body .tools .icon {
@@ -573,6 +575,51 @@ body .tools .github p {
 
 body .tools .figma p {
   padding-top: 40px;
+}
+
+@media (min-width: 540px) {
+  body .tools {
+    height: 50vh;
+    padding-bottom: 5vh;
+  }
+  body .tools .tools-header {
+    height: 120px;
+  }
+  body .tools .tools-header span {
+    padding-top: 6px;
+    padding-bottom: 0px;
+  }
+  body .tools .tools-header h1 {
+    font-size: 42px;
+  }
+  body .tools .icon {
+    width: 16.66%;
+  }
+  body .tools .icon p {
+    text-align: center;
+    padding: 0px;
+    margin-top: 90px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200;
+  }
+  body .tools .bootstrap p {
+    margin-top: 100px;
+  }
+  body .tools .git p {
+    margin-top: 105px;
+  }
+  body .tools .npm p {
+    margin-top: 95px;
+  }
+  body .tools .sass p {
+    margin-top: 112px;
+  }
+  body .tools .github p {
+    margin-top: 112px;
+  }
+  body .tools .figma p {
+    margin-top: 112px;
+  }
 }
 
 body .projects {
