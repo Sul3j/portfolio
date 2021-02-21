@@ -88,3 +88,68 @@ body {
         }
       }
 }
+
+@media(min-width: 540px) {
+  body {
+    .skills {
+      height: 50vh;
+      padding-bottom: 5vh;
+      .skills-header {
+        height: 120px;
+        span {
+          padding-top: 8px;
+          padding-bottom: 0px;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+      }
+      .icon {
+        width: 16.66%;
+        p {
+          text-align: center;
+          padding: 0px;
+          margin-top: 90px;
+          font-family: 'Gothic A1', sans-serif;
+          font-weight: 200;
+        }
+      }
+
+      .typescript {
+        p {
+          margin-top: 110px;
+        }
+      }
+
+      .javascript {
+        p {
+          margin-top: 100px;
+        }
+      }
+
+      .nodejs {
+        p {
+          margin-top: 110px;
+        }
+      }
+
+      .nestjs {
+        p {
+          margin-top: 95px;
+        }
+      }
+
+      .postgreesql {
+        p {
+          margin-top: 105px;
+        }
+        svg {
+          height: 70px;
+        }
+      }
+
+
+    }
+  }
+}

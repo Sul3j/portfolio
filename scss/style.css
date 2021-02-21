@@ -331,6 +331,9 @@ body .about-me .about-me-text p {
             transform: translate(-20%, -90%);
     font-size: 18px;
   }
+  body .about-me .about-me-text p {
+    font-weight: 100;
+  }
 }
 
 body .skills {
@@ -420,6 +423,51 @@ body .skills .nestjs svg {
 
 body .skills .postgreesql p {
   padding-top: 35px;
+}
+
+@media (min-width: 540px) {
+  body .skills {
+    height: 50vh;
+    padding-bottom: 5vh;
+  }
+  body .skills .skills-header {
+    height: 120px;
+  }
+  body .skills .skills-header span {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  body .skills .skills-header h1 {
+    font-size: 42px;
+  }
+  body .skills .icon {
+    width: 16.66%;
+  }
+  body .skills .icon p {
+    text-align: center;
+    padding: 0px;
+    margin-top: 90px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200;
+  }
+  body .skills .typescript p {
+    margin-top: 110px;
+  }
+  body .skills .javascript p {
+    margin-top: 100px;
+  }
+  body .skills .nodejs p {
+    margin-top: 110px;
+  }
+  body .skills .nestjs p {
+    margin-top: 95px;
+  }
+  body .skills .postgreesql p {
+    margin-top: 105px;
+  }
+  body .skills .postgreesql svg {
+    height: 70px;
+  }
 }
 
 body .tools {
