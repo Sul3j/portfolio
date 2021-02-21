@@ -307,6 +307,32 @@ body .about-me .about-me-text p {
   font-weight: 200;
 }
 
+@media (min-width: 540px) {
+  body .about-me {
+    height: 50vh;
+  }
+  body .about-me .about-me-header {
+    -webkit-transform: translate(-140%, 50%);
+            transform: translate(-140%, 50%);
+    height: 180px;
+  }
+  body .about-me .about-me-header h1 {
+    font-size: 54px;
+    line-height: 70px;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  body .about-me .about-me-text {
+    position: relative;
+    width: 60vw;
+    -webkit-transform: translate(-20%, -90%);
+            transform: translate(-20%, -90%);
+    font-size: 18px;
+  }
+}
+
 body .skills {
   display: -webkit-box;
   display: -ms-flexbox;
