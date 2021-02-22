@@ -491,7 +491,7 @@ body .tools .tools-header {
 }
 
 body .tools .tools-header h1 {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 32px;
   color: #fff;
   width: 100%;
@@ -526,57 +526,51 @@ body .tools .icon {
   height: 25vh;
 }
 
-body .tools .icon svg {
-  height: 62px;
+body .tools .icon .skill-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 70%;
+  margin-bottom: 0;
+}
+
+body .tools .icon .skill-icon svg {
+  height: 65px;
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
 }
 
-body .tools .icon svg path {
+body .tools .icon .skill-icon svg path {
   fill: #fff;
 }
 
-body .tools .icon p {
-  text-align: center;
-  padding: 20px;
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 200;
-  color: #fff;
-}
-
-body .tools .bootstrap svg {
+body .tools .icon .skill-icon .bootstrap {
   height: 74px;
 }
 
-body .tools .bootstrap p {
-  padding: 30px;
-}
-
-body .tools .git svg {
+body .tools .icon .skill-icon .git {
   height: 70px;
 }
 
-body .tools .git p {
-  padding: 35px;
-}
-
-body .tools .sass p {
-  padding-top: 38px;
-}
-
-body .tools .npm svg {
+body .tools .icon .skill-icon .npm {
   height: 80px;
 }
 
-body .tools .github p {
-  padding-top: 40px;
-}
-
-body .tools .figma p {
-  padding-top: 40px;
+body .tools .icon p {
+  display: inline-block;
+  height: 30%;
+  text-align: center;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 200;
+  width: 100%;
+  margin: 0;
+  color: #fff;
 }
 
 @media (min-width: 540px) {
@@ -601,7 +595,7 @@ body .tools .figma p {
     text-align: center;
     padding: 0px;
     margin-top: 90px;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: "Gothic A1", sans-serif;
     font-weight: 200;
   }
   body .tools .bootstrap p {
