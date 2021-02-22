@@ -445,30 +445,15 @@ body .skills .icon p {
   body .skills .icon {
     width: 16.66%;
   }
+  body .skills .icon .skill-icon svg {
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
+  }
   body .skills .icon p {
     text-align: center;
     padding: 0px;
-    margin-top: 90px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 200;
-  }
-  body .skills .typescript p {
-    margin-top: 110px;
-  }
-  body .skills .javascript p {
-    margin-top: 100px;
-  }
-  body .skills .nodejs p {
-    margin-top: 110px;
-  }
-  body .skills .nestjs p {
-    margin-top: 95px;
-  }
-  body .skills .postgreesql p {
-    margin-top: 105px;
-  }
-  body .skills .postgreesql svg {
-    height: 70px;
   }
 }
 
