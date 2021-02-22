@@ -24,6 +24,10 @@ body {
           top: 46%;
           left: 50%;
           transform: translate(-50%, -50%);
+          label {
+            color: #fff;
+            z-index: 3;
+          }
   
           .input{
             width: 250px;
@@ -37,6 +41,7 @@ body {
             font-family: 'Gothic A1', sans-serif;
             font-size: 16px;
             color: white;
+            
           }
           
           .text-message{
