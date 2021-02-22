@@ -576,30 +576,15 @@ body .tools .icon p {
   body .tools .icon {
     width: 16.66%;
   }
+  body .tools .icon .skill-icon svg {
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
+  }
   body .tools .icon p {
     text-align: center;
     padding: 0px;
-    margin-top: 90px;
     font-family: "Gothic A1", sans-serif;
     font-weight: 200;
-  }
-  body .tools .bootstrap p {
-    margin-top: 100px;
-  }
-  body .tools .git p {
-    margin-top: 105px;
-  }
-  body .tools .npm p {
-    margin-top: 95px;
-  }
-  body .tools .sass p {
-    margin-top: 112px;
-  }
-  body .tools .github p {
-    margin-top: 112px;
-  }
-  body .tools .figma p {
-    margin-top: 112px;
   }
 }
 
