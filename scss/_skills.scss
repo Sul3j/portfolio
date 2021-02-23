@@ -109,3 +109,35 @@ body {
     }
   }
 }
+
+@media (min-width: 992px) {
+  body {
+    .skills {
+      .skills-header {
+        h1 {
+          font-size: 52px;
+        }
+      }
+      .icon {
+        .skill-icon {
+          svg {
+            height: 110px !important;
+          }
+          .javascript {
+            height: 120px !important;
+          }
+          .angular {
+            height: 125px !important;
+          }
+          .nestjs {
+            height: 125px !important;
+          }
+        }
+        p{
+          padding-top: 20px !important;
+          font-size: 24px !important;
+        }
+      }
+    }
+  }
+}
