@@ -234,3 +234,47 @@ body{
     }
   }
 }
+
+@media(min-width: 992px) {
+  body {
+    header {
+      .header-logo {
+        left: 2%;
+        top: 3%;
+        width: 226px;
+        .name {
+          font-size: 26px;
+          
+        }
+        .profession {
+          font-size: 23px;
+          padding: 4px;
+        }
+      }
+    }
+    
+    .navigation-menu  {
+      left: 85% !important;
+      transform: translateX(-50%) !important;
+      width: 470px !important;
+      li {
+        font-size: 24px !important;
+        img {
+          height: 26px !important;
+        }
+      }
+
+    }
+
+    .welcome-header {
+      width: 800px !important;
+      h1 {
+        font-size: 72px !important;
+        line-height: 80px !important;
+      }
+      span {
+        padding: 8px 12px 6px 12px !important;
+      }
+    }
+  }
+}

@@ -262,6 +262,43 @@ body header .welcome-header span {
   }
 }
 
+@media (min-width: 992px) {
+  body header .header-logo {
+    left: 2%;
+    top: 3%;
+    width: 226px;
+  }
+  body header .header-logo .name {
+    font-size: 26px;
+  }
+  body header .header-logo .profession {
+    font-size: 23px;
+    padding: 4px;
+  }
+  body .navigation-menu {
+    left: 85% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+    width: 470px !important;
+  }
+  body .navigation-menu li {
+    font-size: 24px !important;
+  }
+  body .navigation-menu li img {
+    height: 26px !important;
+  }
+  body .welcome-header {
+    width: 800px !important;
+  }
+  body .welcome-header h1 {
+    font-size: 72px !important;
+    line-height: 80px !important;
+  }
+  body .welcome-header span {
+    padding: 8px 12px 6px 12px !important;
+  }
+}
+
 body .about-me {
   width: 100vw;
   height: 100vh;
