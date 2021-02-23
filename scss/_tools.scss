@@ -116,3 +116,26 @@ body {
     }
   }
 }
+
+@media (min-width: 992px) {
+  body {
+    .tools {
+      .tools-header {
+        h1 {
+          font-size: 52px;
+        }
+      }
+      .icon {
+        .skill-icon {
+          svg {
+            height: 110px !important;
+          }
+        }
+        p {
+          font-size: 24px;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
