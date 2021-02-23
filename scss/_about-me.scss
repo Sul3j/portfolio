@@ -46,27 +46,42 @@ body {
   body {
     .about-me {
       height: 50vh;
-      .about-me-header {
-        transform: translate(20%, 50%);
-        left: 0;
-        height: 180px;
-        h1 {
-          font-size: 54px;
-          line-height: 70px;
-          text-align: left;
-          padding: 10px;
-          margin-top: 10px;
-          margin-left: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      .about-me-header-wrapper {
+        width: 50%;
+        height: 100%;
+        .about-me-header {
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+          height: 180px;
+          h1 {
+            font-size: 54px;
+            line-height: 70px;
+            text-align: left;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 8px;
+          }
         }
       }
-      .about-me-text {
-        position: relative;
-        width: 60vw;
-        transform: translate(-20%, -90%);
-        font-size: 18px;
-        p {
-          font-weight: 100;
-          max-width: 450px;
+      .about-me-text-wrapper {
+        width: 50%;
+        height: 100%;
+        .about-me-text {
+          position: relative;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 18px;
+          p {
+            width: 100%;
+            font-weight: 100;
+            max-width: 350px;
+            margin: 0 0 0 0;
+          }
         }
       }
     }

@@ -314,14 +314,24 @@ body .about-me .about-me-text-wrapper .about-me-text p {
 @media (min-width: 540px) {
   body .about-me {
     height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  body .about-me .about-me-header {
-    -webkit-transform: translate(20%, 50%);
-            transform: translate(20%, 50%);
-    left: 0;
+  body .about-me .about-me-header-wrapper {
+    width: 50%;
+    height: 100%;
+  }
+  body .about-me .about-me-header-wrapper .about-me-header {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
     height: 180px;
   }
-  body .about-me .about-me-header h1 {
+  body .about-me .about-me-header-wrapper .about-me-header h1 {
     font-size: 54px;
     line-height: 70px;
     text-align: left;
@@ -329,16 +339,24 @@ body .about-me .about-me-text-wrapper .about-me-text p {
     margin-top: 10px;
     margin-left: 8px;
   }
-  body .about-me .about-me-text {
+  body .about-me .about-me-text-wrapper {
+    width: 50%;
+    height: 100%;
+  }
+  body .about-me .about-me-text-wrapper .about-me-text {
     position: relative;
-    width: 60vw;
-    -webkit-transform: translate(-20%, -90%);
-            transform: translate(-20%, -90%);
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 18px;
   }
-  body .about-me .about-me-text p {
+  body .about-me .about-me-text-wrapper .about-me-text p {
+    width: 100%;
     font-weight: 100;
-    max-width: 450px;
+    max-width: 350px;
+    margin: 0 0 0 0;
   }
 }
 
