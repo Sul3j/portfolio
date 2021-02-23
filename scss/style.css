@@ -594,7 +594,7 @@ body .tools .icon {
   height: 25vh;
 }
 
-body .tools .icon .skill-icon {
+body .tools .icon .tools-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,7 +605,7 @@ body .tools .icon .skill-icon {
   margin-bottom: 0;
 }
 
-body .tools .icon .skill-icon svg {
+body .tools .icon .tools-icon svg {
   height: 65px;
   position: relative;
   top: 50%;
@@ -614,19 +614,19 @@ body .tools .icon .skill-icon svg {
           transform: translate(-50%, -35%);
 }
 
-body .tools .icon .skill-icon svg path {
+body .tools .icon .tools-icon svg path {
   fill: #fff;
 }
 
-body .tools .icon .skill-icon .bootstrap {
+body .tools .icon .tools-icon .bootstrap {
   height: 74px;
 }
 
-body .tools .icon .skill-icon .git {
+body .tools .icon .tools-icon .git {
   height: 70px;
 }
 
-body .tools .icon .skill-icon .npm {
+body .tools .icon .tools-icon .npm {
   height: 80px;
 }
 
@@ -659,7 +659,7 @@ body .tools .icon p {
   body .tools .icon {
     width: 16.66%;
   }
-  body .tools .icon .skill-icon svg {
+  body .tools .icon .tools-icon svg {
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
   }
@@ -675,7 +675,7 @@ body .tools .icon p {
   body .tools .tools-header h1 {
     font-size: 52px;
   }
-  body .tools .icon .skill-icon svg {
+  body .tools .icon .tools-icon svg {
     height: 110px !important;
   }
   body .tools .icon p {

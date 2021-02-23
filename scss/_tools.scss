@@ -41,7 +41,7 @@ body {
     .icon {
       width: 50%;
       height: 25vh;
-      .skill-icon {
+      .tools-icon {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -101,7 +101,7 @@ body {
       }
       .icon {
         width: 16.66%;
-        .skill-icon {
+        .tools-icon {
           svg {
             transform: translate(-50%, -5%);
           }
@@ -126,7 +126,7 @@ body {
         }
       }
       .icon {
-        .skill-icon {
+        .tools-icon {
           svg {
             height: 110px !important;
           }
