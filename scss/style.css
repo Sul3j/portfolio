@@ -268,10 +268,14 @@ body .about-me {
   background-color: #000;
 }
 
-body .about-me .about-me-header {
+body .about-me .about-me-header-wrapper {
+  height: 25%;
+}
+
+body .about-me .about-me-header-wrapper .about-me-header {
   position: relative;
   left: 50%;
-  top: 13%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 250px;
@@ -282,7 +286,7 @@ body .about-me .about-me-header {
   background-color: #000;
 }
 
-body .about-me .about-me-header h1 {
+body .about-me .about-me-header-wrapper .about-me-header h1 {
   text-transform: uppercase;
   color: #fff;
   font-family: 'Gothic A1', sans-serif;
@@ -291,16 +295,16 @@ body .about-me .about-me-header h1 {
   line-height: 20px;
 }
 
-body .about-me .about-me-text {
-  position: relative;
-  top: 38%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+body .about-me .about-me-text-wrapper {
+  height: 75%;
+  width: 100%;
+}
+
+body .about-me .about-me-text-wrapper .about-me-text {
   text-align: justify;
 }
 
-body .about-me .about-me-text p {
+body .about-me .about-me-text-wrapper .about-me-text p {
   color: #fff;
   font-family: 'Gothic A1', sans-serif;
   margin: 30px;
@@ -312,8 +316,9 @@ body .about-me .about-me-text p {
     height: 50vh;
   }
   body .about-me .about-me-header {
-    -webkit-transform: translate(-140%, 50%);
-            transform: translate(-140%, 50%);
+    -webkit-transform: translate(20%, 50%);
+            transform: translate(20%, 50%);
+    left: 0;
     height: 180px;
   }
   body .about-me .about-me-header h1 {
@@ -333,6 +338,7 @@ body .about-me .about-me-text p {
   }
   body .about-me .about-me-text p {
     font-weight: 100;
+    max-width: 450px;
   }
 }
 
