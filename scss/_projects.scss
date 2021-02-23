@@ -37,3 +37,16 @@ body {
     }
   }
 }
+
+@media(min-width: 992px) {
+  body {
+    .projects {
+      .projects-header {
+        width: 500px;
+        h1 {
+          font-size: 52px;
+        }
+      }
+    }
+  }
+} 
