@@ -889,4 +889,40 @@ body .form form .submit-button {
     height: 50px !important;
   }
 }
+
+@media (min-width: 992px) {
+  body .form .contact-me {
+    position: relative;
+    left: 47%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body .form .contact-me h1 {
+    font-size: 62px;
+    width: 500px;
+  }
+  body form {
+    -webkit-transform: translate(-50%, -45%) !important;
+            transform: translate(-50%, -45%) !important;
+  }
+  body form .input {
+    width: 450px !important;
+    height: 50px !important;
+    font-size: 22px !important;
+  }
+  body form .description {
+    width: 450px !important;
+    font-size: 20px !important;
+  }
+  body form .text-message {
+    width: 450px !important;
+    height: 320px !important;
+    font-size: 22px !important;
+  }
+  body form .submit-button {
+    margin-top: 30px !important;
+    font-size: 28px !important;
+    width: 300px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
