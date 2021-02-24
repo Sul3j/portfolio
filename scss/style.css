@@ -791,15 +791,23 @@ body .form .contact-me h1 {
 
 body .form form {
   position: relative;
-  top: 46%;
+  top: 43%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-body .form form label {
+body .form form .description {
+  position: relative;
   color: #fff;
-  z-index: 3;
+  width: 250px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 body .form form .input {
@@ -811,10 +819,9 @@ body .form form .input {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-top: 20px;
   font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
-  color: white;
+  color: #fff;
 }
 
 body .form form .text-message {
@@ -826,7 +833,6 @@ body .form form .text-message {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-top: 20px;
   height: 160px;
   font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
