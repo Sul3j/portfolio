@@ -398,11 +398,17 @@ body .about-me .about-me-text-wrapper .about-me-text p {
 }
 
 @media (min-width: 992px) {
+  body .about-me {
+    overflow: hidden;
+  }
+  body .about-me .about-me-header-wrapper {
+    width: 40%;
+  }
   body .about-me .about-me-header-wrapper .about-me-header {
     width: 340px;
     height: 250px;
     top: 50%;
-    left: 70%;
+    left: 60%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -410,9 +416,18 @@ body .about-me .about-me-text-wrapper .about-me-text p {
     font-size: 84px;
     line-height: 84px;
   }
+  body .about-me .about-me-text-wrapper {
+    width: 60%;
+  }
+  body .about-me .about-me-text-wrapper .about-me-text {
+    -webkit-transform: translate(-42%, -50%);
+            transform: translate(-42%, -50%);
+    left: 50%;
+    top: 50%;
+  }
   body .about-me .about-me-text-wrapper .about-me-text p {
     font-size: 24px !important;
-    max-width: 600px;
+    max-width: 80%;
   }
 }
 
