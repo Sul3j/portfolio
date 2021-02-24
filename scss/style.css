@@ -873,6 +873,11 @@ body .form form .submit-button {
     height: 40px !important;
     font-size: 20px !important;
   }
+  body form .description {
+    width: 340px !important;
+    font-size: 16px !important;
+    margin-top: 15px !important;
+  }
   body form .text-message {
     width: 340px !important;
     height: 270px !important;
