@@ -397,6 +397,25 @@ body .about-me .about-me-text-wrapper .about-me-text p {
   }
 }
 
+@media (min-width: 992px) {
+  body .about-me .about-me-header-wrapper .about-me-header {
+    width: 340px;
+    height: 250px;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  body .about-me .about-me-header-wrapper .about-me-header h1 {
+    font-size: 84px;
+    line-height: 84px;
+  }
+  body .about-me .about-me-text-wrapper .about-me-text p {
+    font-size: 24px !important;
+    max-width: 600px;
+  }
+}
+
 body .skills {
   display: -webkit-box;
   display: -ms-flexbox;
