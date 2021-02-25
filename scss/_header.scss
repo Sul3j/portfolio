@@ -210,7 +210,10 @@ body{
           font-family: 'Gothic A1', sans-serif;
           margin-left: 10px;
           font-weight: 200;
-          
+          a {
+            text-decoration: none;
+            color: #000;
+          }
           img {
             height: 22px;
           }
@@ -260,7 +263,7 @@ body{
     .navigation-menu  {
       left: 85% !important;
       transform: translateX(-50%) !important;
-      width: 470px !important;
+      width: 540px !important;
       li {
         font-size: 24px !important;
         img {

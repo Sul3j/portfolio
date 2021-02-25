@@ -248,6 +248,10 @@ body header .welcome-header span {
     margin-left: 10px;
     font-weight: 200;
   }
+  body header .navigation-menu li a {
+    text-decoration: none;
+    color: #000;
+  }
   body header .navigation-menu li img {
     height: 22px;
   }
@@ -284,7 +288,7 @@ body header .welcome-header span {
     left: 85% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
-    width: 470px !important;
+    width: 540px !important;
   }
   body .navigation-menu li {
     font-size: 24px !important;
