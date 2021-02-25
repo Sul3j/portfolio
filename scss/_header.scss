@@ -131,6 +131,10 @@ body{
               text-align: center;
               line-height: 46px;
               font-weight: 200;
+              a {
+                text-decoration: none;
+                color: #000;
+              }
               img{
                 margin-top: 10px;
                 height: 32px;

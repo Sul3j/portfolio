@@ -169,6 +169,11 @@ body header .navigation ul li {
   font-weight: 200;
 }
 
+body header .navigation ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
 body header .navigation ul li img {
   margin-top: 10px;
   height: 32px;
@@ -762,6 +767,10 @@ body .projects .projects-header h1 {
   body .projects .projects-header h1 {
     font-size: 52px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body .form {
