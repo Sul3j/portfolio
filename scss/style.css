@@ -236,14 +236,12 @@ body header .welcome-header span {
     list-style: none;
     position: absolute;
     width: 420px;
-    left: 70%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    right: 2%;
     top: 3%;
   }
   body header .navigation-menu li {
     display: inline-block;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Gothic A1', sans-serif;
     margin-left: 10px;
     font-weight: 200;
@@ -253,7 +251,7 @@ body header .welcome-header span {
     color: #000;
   }
   body header .navigation-menu li img {
-    height: 22px;
+    height: 19px;
   }
   body header .navigation-menu li .github-icon {
     margin-right: 3px;
@@ -285,7 +283,7 @@ body header .welcome-header span {
     padding: 4px;
   }
   body .navigation-menu {
-    left: 85% !important;
+    left: 80% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
     width: 540px !important;

@@ -201,12 +201,11 @@ body{
         list-style: none;
         position: absolute;
         width: 420px;
-        left: 70%;
-        transform: translateX(-50%);
+        right: 2%;
         top: 3%;
         li {
           display: inline-block;
-          font-size: 20px;
+          font-size: 17px;
           font-family: 'Gothic A1', sans-serif;
           margin-left: 10px;
           font-weight: 200;
@@ -215,7 +214,7 @@ body{
             color: #000;
           }
           img {
-            height: 22px;
+            height: 19px;
           }
 
           .github-icon{
@@ -261,7 +260,7 @@ body{
     }
     
     .navigation-menu  {
-      left: 85% !important;
+      left: 80% !important;
       transform: translateX(-50%) !important;
       width: 540px !important;
       li {
