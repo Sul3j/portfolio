@@ -564,20 +564,20 @@ body .skills .icon p {
     font-size: 52px;
   }
   body .skills .icon .skill-icon svg {
-    height: 110px !important;
+    height: 95px !important;
   }
   body .skills .icon .skill-icon .javascript {
-    height: 120px !important;
+    height: 105px !important;
   }
   body .skills .icon .skill-icon .angular {
-    height: 125px !important;
+    height: 110px !important;
   }
   body .skills .icon .skill-icon .nestjs {
-    height: 125px !important;
+    height: 110px !important;
   }
   body .skills .icon p {
-    padding-top: 50px;
-    font-size: 24px !important;
+    padding-top: 40px;
+    font-size: 20px !important;
   }
 }
 

@@ -17,8 +17,6 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-console.log(hamburgerMenu);
-
 const closeMenu = () => {
   menuOption.forEach(element => {
     element.addEventListener('click', () => {
