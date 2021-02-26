@@ -129,19 +129,20 @@ body {
     .form {
       .contact-me {
         position: relative;
-        left: 47%;
-        transform: translateX(-50%);
+        left: 50%;
+        transform: translateX(-55%);
         h1 {
-          font-size: 62px;
+          padding-top: 20px;
+          font-size: 52px;
           width: 500px;
         }
       }
     }
     form {
-      transform: translate(-50%, -45%) !important;
+      transform: translate(-30%, -40%) !important;
       .input {
         width: 450px !important;
-        height: 50px !important;
+        height: 40px !important;
         font-size: 22px !important;
       }
 
@@ -151,7 +152,7 @@ body {
       }
       .text-message {
         width: 450px !important;
-        height: 320px !important;
+        height: 300px !important;
         font-size: 22px !important;
       }
 
