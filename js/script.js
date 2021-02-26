@@ -1,11 +1,13 @@
 const menuBtn = document.querySelector('.hamburger'); 
 const menu = document.querySelector('.navigation');
+const menuOption = document.querySelectorAll('.menu-option');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
+
 
 isOpen = false;
 
 menuBtn.addEventListener('click', () => { 
   menuBtn.classList.toggle('hamburger--active'); 
-  console.log(menu.style.right.value)
   if(isOpen){
     menu.style.left = '100%';
     isOpen = !isOpen;
@@ -14,4 +16,22 @@ menuBtn.addEventListener('click', () => {
     isOpen = !isOpen;
   }
 });
+
+console.log(hamburgerMenu);
+
+const closeMenu = () => {
+  menuOption.forEach(element => {
+    element.addEventListener('click', () => {
+      menu.style.left = "100%"; 
+      isOpen = !isOpen;
+      hamburgerMenu.classList.remove('hamburger--active');
+    });
+  });
+}
+
+closeMenu();
+
+
+
+
 
