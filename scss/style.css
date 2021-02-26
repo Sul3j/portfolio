@@ -283,9 +283,7 @@ body header .welcome-header span {
     padding: 4px;
   }
   body .navigation-menu {
-    left: 80% !important;
-    -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
+    right: 3%;
     width: 540px !important;
   }
   body .navigation-menu li {
