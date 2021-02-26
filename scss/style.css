@@ -717,11 +717,17 @@ body .tools .icon p {
     font-size: 52px;
   }
   body .tools .icon .tools-icon svg {
-    height: 110px !important;
+    height: 95px !important;
   }
   body .tools .icon p {
-    font-size: 24px;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  body .tools .icon .git {
+    height: 100px;
+  }
+  body .tools .icon .npm {
+    height: 105px;
   }
 }
 

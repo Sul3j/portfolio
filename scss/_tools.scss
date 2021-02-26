@@ -128,12 +128,20 @@ body {
       .icon {
         .tools-icon {
           svg {
-            height: 110px !important;
+            height: 95px !important;
           }
         }
         p {
-          font-size: 24px;
-          padding-top: 50px;
+          font-size: 20px;
+          padding-top: 40px;
+        }
+
+        .git {
+          height: 100px;
+        }
+
+        .npm {
+          height: 105px;
         }
       }
     }
