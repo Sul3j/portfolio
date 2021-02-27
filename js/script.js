@@ -66,3 +66,14 @@ gsap.fromTo(aboutMeText, {}, { professionActive,
     trigger: 'header',
     start: 'top 1%' 
   }})
+
+  const headerName = document.querySelector('.header-name');
+
+  const headerNameActive = () => {
+    headerName.classList.add('header-name-active');
+  }
+  gsap.fromTo(aboutMeText, {}, { headerNameActive,
+    scrollTrigger: {
+      trigger: 'header',
+      start: 'top 1%' 
+    }})
