@@ -194,6 +194,10 @@ body{
           padding-top: 2px;
           padding-bottom: 2px;
         }
+
+        .profession-active {
+          box-shadow: inset 196px 0 0 0 #000;
+        }
       }
       .welcome-header {
         width: 530px;
