@@ -38,12 +38,20 @@ gsap.fromTo(aboutMeText, {y: '+=100', opacity: 0}, {y: 0,
 opacity: 1, stagger: 0.2, duration: 1.5, ease: 'easeInOut',
 scrollTrigger: {
   trigger: '.about-me-text-wrapper',
-  start: 'top 65%'
+  start: 'top 65%' 
 }})
 
+const aboutMeHeader = document.querySelector('.about-me-header');
 
+console.log(aboutMeHeader);
 
+const addClass = () => {
+  aboutMeHeader.classList.add('active');
+}
 
-
-
+gsap.fromTo(aboutMeText, {}, { addClass,
+  scrollTrigger: {
+    trigger: '.about-me-text-wrapper',
+    start: 'top 65%' 
+  }})
 
