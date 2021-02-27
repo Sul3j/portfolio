@@ -55,3 +55,14 @@ gsap.fromTo(aboutMeText, {}, { addClass,
     start: 'top 65%' 
   }})
 
+const profession = document.querySelector('.profession');
+
+const professionActive = () => {
+  profession.classList.add('profession-active');
+}
+
+gsap.fromTo(aboutMeText, {}, { professionActive,
+  scrollTrigger: {
+    trigger: 'header',
+    start: 'top 1%' 
+  }})

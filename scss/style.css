@@ -39,12 +39,21 @@ body header .header-logo .name {
 
 body header .header-logo .profession {
   color: #fff;
-  background-color: #000;
+  -webkit-box-shadow: inset 0 0 0 #000;
+          box-shadow: inset 0 0 0 #000;
   height: 28px;
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
   padding-left: 3px;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  outline: none;
+}
+
+body header .header-logo .profession-active {
+  -webkit-box-shadow: inset 158px 0 0 0 #000;
+          box-shadow: inset 158px 0 0 0 #000;
 }
 
 body header .hamburger {
