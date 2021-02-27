@@ -43,8 +43,6 @@ scrollTrigger: {
 
 const aboutMeHeader = document.querySelector('.about-me-header');
 
-console.log(aboutMeHeader);
-
 const addClass = () => {
   aboutMeHeader.classList.add('active');
 }

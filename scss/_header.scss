@@ -29,18 +29,25 @@ body{
                 padding-left: 5px;
             }
             .profession {
-                color: #fff;
                 box-shadow: inset 0 0 0 #000;
                 height: 28px;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 28px;
+                
                 padding-left: 3px;
-                transition: box-shadow ease-out 0.4s;
+                transition: box-shadow ease-out 0.6s;
                 outline: none;
+                span {
+                  transition: color ease-out 0.6s;
+                  color: #000;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 28px;
+                }
             }
             .profession-active {
               box-shadow: inset 158px 0 0 0 #000;
+              span {
+                color: #fff;
+              }
             }
         }
         .hamburger {
@@ -199,6 +206,9 @@ body{
           font-size: 20px;
           padding-top: 2px;
           padding-bottom: 2px;
+          span {
+            font-size: 20px;
+          }
         }
 
         .profession-active {
@@ -270,8 +280,10 @@ body{
           
         }
         .profession {
-          font-size: 23px;
           padding: 4px;
+          span {
+            font-size: 23px;
+          }
         }
         .profession-active {
           box-shadow: inset 226px 0 0 0 #000;
@@ -310,7 +322,7 @@ body{
         line-height: 94px !important;
       }
       .header-name{
-        padding: 8px 12px 6px 12px !important;
+        padding: 8px 12px 6px 6px !important;
       }
     }
   }
