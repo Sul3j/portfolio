@@ -132,6 +132,7 @@ body {
     .form {
       .contact-me {
         width: 350px;
+        top: 10%;
         h1 {
           font-size: 42px;
           padding-top: 0;          
@@ -190,6 +191,7 @@ body {
       .contact-me {
         position: relative;
         left: 50%;
+        top: 6%;
         transform: translateX(-50%);
         padding-right: 50px;
         padding-left: 50px;

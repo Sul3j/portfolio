@@ -1058,6 +1058,7 @@ body .form form .submit-button {
 @media (min-width: 540px) {
   body .form .contact-me {
     width: 350px;
+    top: 10%;
   }
   body .form .contact-me h1 {
     font-size: 42px;
@@ -1112,6 +1113,7 @@ body .form form .submit-button {
   body .form .contact-me {
     position: relative;
     left: 50%;
+    top: 6%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     padding-right: 50px;
