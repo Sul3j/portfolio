@@ -8,21 +8,63 @@ body {
         width: 100vw;
         background-color: #000;
         .contact-me {
-          width: 300px;
+          width: 260px;
           height: 60px;
           padding-top: 15px;
           position: relative;
           left: 50%;
-          transform: translateX(-50%);
+          top: 12%;
+          transform: translate(-50%, -50%);
           h1{
             font-family: 'Gothic A1', sans-serif;
             color: #fff;
             padding: 5px;
-            border: 5px solid #fff;
             font-size: 32px;
             text-align: center;
+            margin: 0;
           }
         }
+
+        .contact-me::before {
+          position: absolute;
+          content: '';
+          height: 0;
+          width: 0;
+          border: 6px solid transparent;
+          bottom: 0;
+          left: 0;
+          box-sizing: border-box;
+        }
+        .contact-me::after {
+          position: absolute;
+          content: '';
+          height: 0;
+          width: 0;
+          border: 6px solid transparent;
+          top: 0;
+          right: 0;
+          box-sizing: border-box;
+        } 
+        .contact-me-active::before {
+          height: 75px;
+          width: 260px;
+          border: 4px solid #fff;
+          border-right: none;
+          border-bottom: none;
+          transition: height 0.5s linear,
+          width 0.5s linear 0.5s;
+        }
+        .contact-me-active::after {
+          height: 75px;
+          width: 260px;
+          border: 4px solid #fff;
+          border-left: none;
+          border-top: none;
+          transition: height 0.5s linear,
+          width 0.5s linear 0.5s;
+        }
+
+
         form {
           position: relative;
           top: 43%;

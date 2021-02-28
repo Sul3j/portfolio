@@ -75,3 +75,15 @@ gsap.fromTo(aboutMeText, {}, { professionActive,
       trigger: 'header',
       start: 'top 1%' 
     }})
+
+  const formHeader = document.querySelector('.contact-me');
+
+  const formHeaderActive = () => {
+    formHeader.classList.add('contact-me-active');
+  }
+
+  gsap.fromTo(aboutMeText, {}, { formHeaderActive,
+    scrollTrigger: {
+      trigger: '.form',
+      start: 'top 20%' 
+    }})

@@ -926,22 +926,67 @@ body .form {
 }
 
 body .form .contact-me {
-  width: 300px;
+  width: 260px;
   height: 60px;
   padding-top: 15px;
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 12%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body .form .contact-me h1 {
   font-family: 'Gothic A1', sans-serif;
   color: #fff;
   padding: 5px;
-  border: 5px solid #fff;
   font-size: 32px;
   text-align: center;
+  margin: 0;
+}
+
+body .form .contact-me::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .form .contact-me::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  top: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .form .contact-me-active::before {
+  height: 75px;
+  width: 260px;
+  border: 4px solid #fff;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: height 0.5s linear, width 0.5s linear 0.5s;
+  transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+
+body .form .contact-me-active::after {
+  height: 75px;
+  width: 260px;
+  border: 4px solid #fff;
+  border-left: none;
+  border-top: none;
+  -webkit-transition: height 0.5s linear, width 0.5s linear 0.5s;
+  transition: height 0.5s linear, width 0.5s linear 0.5s;
 }
 
 body .form form {
