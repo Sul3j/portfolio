@@ -22,6 +22,8 @@ body {
             font-size: 32px;
             text-align: center;
             margin: 0;
+            opacity: 0;
+            transition: opacity 1s;
           }
         }
 
@@ -45,6 +47,12 @@ body {
           right: 0;
           box-sizing: border-box;
         } 
+
+        .contact-me-active {
+          h1 {
+            opacity: 1;
+          }
+        }
         .contact-me-active::before {
           height: 75px;
           width: 260px;

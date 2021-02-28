@@ -85,5 +85,6 @@ gsap.fromTo(aboutMeText, {}, { professionActive,
   gsap.fromTo(aboutMeText, {}, { formHeaderActive,
     scrollTrigger: {
       trigger: '.form',
-      start: 'top 20%' 
+      start: 'top 60%',
+      markers: true 
     }})
