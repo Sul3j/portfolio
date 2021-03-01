@@ -138,8 +138,17 @@ body {
           padding-bottom: 0px;
         }
 
-        h1 {
+        .tools-header-text {
           font-size: 42px;
+          .second::before {
+            height: 59px;
+            top: 35% !important;
+          }
+          .second {
+            .second-text {
+              top: 35.5%;
+            }
+          }
         }
       }
       .icon {
@@ -164,8 +173,18 @@ body {
   body {
     .tools {
       .tools-header {
-        h1 {
+        .tools-header-text {
           font-size: 52px;
+
+          .second {
+            .second-text {
+              top: 42%;
+            }
+          } 
+          .second::before {
+            top: 42% !important;
+            height: 71px;
+          }
         }
       }
       .icon {
