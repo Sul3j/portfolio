@@ -47,7 +47,7 @@ const addClass = () => {
   aboutMeHeader.classList.add('active');
 }
 
-gsap.fromTo(aboutMeText, {}, { addClass,
+gsap.fromTo(aboutMeHeader, {}, { addClass,
   scrollTrigger: {
     trigger: '.about-me-text-wrapper',
     start: 'top 65%' 
@@ -59,7 +59,7 @@ const professionActive = () => {
   profession.classList.add('profession-active');
 }
 
-gsap.fromTo(aboutMeText, {}, { professionActive,
+gsap.fromTo(profession, {}, { professionActive,
   scrollTrigger: {
     trigger: 'header',
     start: 'top 1%' 
@@ -70,7 +70,7 @@ gsap.fromTo(aboutMeText, {}, { professionActive,
   const headerNameActive = () => {
     headerName.classList.add('header-name-active');
   }
-  gsap.fromTo(aboutMeText, {}, { headerNameActive,
+  gsap.fromTo(headerName, {}, { headerNameActive,
     scrollTrigger: {
       trigger: 'header',
       start: 'top 1%' 
@@ -82,9 +82,26 @@ gsap.fromTo(aboutMeText, {}, { professionActive,
     formHeader.classList.add('contact-me-active');
   }
 
-  gsap.fromTo(aboutMeText, {}, { formHeaderActive,
+  gsap.fromTo(formHeader, {}, { formHeaderActive,
     scrollTrigger: {
       trigger: '.form',
-      start: 'top 60%',
-      markers: true 
+      start: 'top 60%'
     }})
+
+  const skillsHeader = document.querySelector('.skills-header-span');
+  const skillsHeaderSpanFirst = document.querySelector('.skills-header-span-first');
+  const skillsHeaderSpanSecond = document.querySelector('.skills-header-span-second');
+  
+  const skillsHeaderActive = () => {
+    skillsHeader.classList.add('skills-header-span-active');
+    skillsHeaderSpanSecond.classList.add('skills-header-span-second-active');
+    skillsHeaderSpanFirst.classList.add('skills-header-span-first-active');
+  }
+
+  gsap.fromTo(skillsHeader, {}, { skillsHeaderActive,
+    scrollTrigger: {
+      trigger: '.skills',
+      start: 'top 60%',
+      markers: true
+    }})
+
