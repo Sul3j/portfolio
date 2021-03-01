@@ -10,7 +10,7 @@ body {
           padding-top: 15px;
           width: 100%;
            .skills-header-text{
-            font-size: 52px !important;
+            font-size: 32px !important;
             .skills-header-span {
               box-sizing: border-box;
               display: inline-block;
@@ -46,12 +46,12 @@ body {
             .skills-header-span::before{
               content: '';
               position: absolute;
-              top: 40%;
+              top: 36%;
               left: 0;
               bottom: 0;
               right: 0;
               width: 50%;
-              height: 71px;
+              height: 40px;
               background-color: #000;
               z-index: -1;
               transform: scaleX(0);
@@ -125,13 +125,17 @@ body {
       padding-bottom: 5vh;
       .skills-header {
         height: 120px;
-        span {
-          padding-top: 8px;
-          padding-bottom: 0px;
+        .skills-header-span-second {
+          padding-top: 8px !important;
         }
 
-        h1 {
-          font-size: 42px;
+        .skills-header-span::before{ 
+          top: 36% !important;
+          height: 59px !important;
+        }
+
+        .skills-header-text {
+          font-size: 42px !important;
         }
       }
       .icon {
@@ -156,8 +160,12 @@ body {
   body {
     .skills {
       .skills-header {
-        h1 {
-          font-size: 52px;
+        .skills-header-text {
+          font-size: 52px !important;
+          .skills-header-span::before{
+            top: 42% !important;
+            height: 71px !important;
+          }
         }
       }
       .icon {

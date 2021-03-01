@@ -101,7 +101,6 @@ gsap.fromTo(profession, {}, { professionActive,
   gsap.fromTo(skillsHeader, {}, { skillsHeaderActive,
     scrollTrigger: {
       trigger: '.skills',
-      start: 'top 60%',
-      markers: true
+      start: 'top 60%'
     }})
 

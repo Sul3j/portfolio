@@ -595,7 +595,7 @@ body .skills .skills-header {
 }
 
 body .skills .skills-header .skills-header-text {
-  font-size: 52px !important;
+  font-size: 32px !important;
   font-family: 'Gothic A1', sans-serif;
   font-size: 32px;
   width: 100%;
@@ -647,12 +647,12 @@ body .skills .skills-header .skills-header-text .skills-header-span-second-activ
 body .skills .skills-header .skills-header-text .skills-header-span::before {
   content: '';
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 0;
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 71px;
+  height: 40px;
   background-color: #000;
   z-index: -1;
   -webkit-transform: scaleX(0);
@@ -731,12 +731,15 @@ body .skills .icon p {
   body .skills .skills-header {
     height: 120px;
   }
-  body .skills .skills-header span {
-    padding-top: 8px;
-    padding-bottom: 0px;
+  body .skills .skills-header .skills-header-span-second {
+    padding-top: 8px !important;
   }
-  body .skills .skills-header h1 {
-    font-size: 42px;
+  body .skills .skills-header .skills-header-span::before {
+    top: 36% !important;
+    height: 59px !important;
+  }
+  body .skills .skills-header .skills-header-text {
+    font-size: 42px !important;
   }
   body .skills .icon {
     width: 16.66%;
@@ -754,8 +757,12 @@ body .skills .icon p {
 }
 
 @media (min-width: 992px) {
-  body .skills .skills-header h1 {
-    font-size: 52px;
+  body .skills .skills-header .skills-header-text {
+    font-size: 52px !important;
+  }
+  body .skills .skills-header .skills-header-text .skills-header-span::before {
+    top: 42% !important;
+    height: 71px !important;
   }
   body .skills .icon .skill-icon svg {
     height: 95px !important;
