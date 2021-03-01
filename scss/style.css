@@ -783,6 +783,7 @@ body .skills .icon p {
 }
 
 body .tools {
+  z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,7 +801,7 @@ body .tools .tools-header {
   width: 100%;
 }
 
-body .tools .tools-header h1 {
+body .tools .tools-header .tools-header-text {
   font-family: "Gothic A1", sans-serif;
   font-size: 32px;
   color: #fff;
@@ -809,7 +810,7 @@ body .tools .tools-header h1 {
   font-weight: 800;
 }
 
-body .tools .tools-header h1 .first {
+body .tools .tools-header .tools-header-text .first {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -823,12 +824,69 @@ body .tools .tools-header h1 .first {
   padding-bottom: 2px;
 }
 
-body .tools .tools-header h1 .second {
+body .tools .tools-header .tools-header-text .first .first-text {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+body .tools .tools-header .tools-header-text .first .first-text-active {
+  opacity: 1;
+}
+
+body .tools .tools-header .tools-header-text .second {
   display: inline-block;
   padding-left: 3px;
   color: #000;
-  background-color: #fff;
   width: calc(50vw - 3px);
+}
+
+body .tools .tools-header .tools-header-text .second .second-text {
+  z-index: 3;
+  position: absolute;
+  top: 37%;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+body .tools .tools-header .tools-header-text .second .second-text-active {
+  opacity: 1;
+}
+
+body .tools .tools-header .tools-header-text .second::before {
+  content: '';
+  position: absolute;
+  top: 36%;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  z-index: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+body .tools .tools-header .tools-header-text .second::before .second-text {
+  z-index: 2;
+  color: black;
+}
+
+body .tools .tools-header .tools-header-text .second-active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background-color: #fff;
 }
 
 body .tools .icon {

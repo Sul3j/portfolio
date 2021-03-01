@@ -1,5 +1,6 @@
 body {
   .tools {
+    z-index: -2;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
@@ -10,7 +11,7 @@ body {
       top: 2.5%;
       padding-top: 15px;
       width: 100%;
-      h1 {
+      .tools-header-text {
         .first {
           box-sizing: border-box;
           display: inline-block;
@@ -22,13 +23,55 @@ body {
           padding-right: 1px;
           padding-top: 4px;
           padding-bottom: 2px;
+          .first-text {
+            opacity: 0;
+            transition: 1s;
+            transition-delay: 1s;
+          }
+          .first-text-active {
+            opacity: 1;
+          }
         }
+
+        
         .second {
           display: inline-block;
           padding-left: 3px;
           color: #000;
-          background-color: #fff;
           width: calc(50vw - 3px);
+          .second-text {
+            z-index: 3;
+            position: absolute;
+            top: 37%;
+            opacity: 0;
+            transition: 1s;
+            transition-delay: 1s;
+          }
+          .second-text-active {
+            opacity: 1;
+          }
+        }
+        .second::before {
+          content: '';
+            position: absolute;
+            top: 36%;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 40px;
+            background-color: #fff;
+            z-index: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 1s;
+            .second-text {
+              z-index: 2;
+              color: black;
+            }
+        }
+        .second-active::before {
+          transform: scaleX(1);
+          background-color: #fff;
         }
         font-family: "Gothic A1", sans-serif;
         font-size: 32px;

@@ -104,3 +104,18 @@ gsap.fromTo(profession, {}, { professionActive,
       start: 'top 60%'
     }})
 
+  const toolsHeader = document.querySelector('.second');
+  const toolsHeaderSpanFirst = document.querySelector('.first-text');
+  const toolsHeaderSpanSecond = document.querySelector('.second-text');
+
+  const toolsHeaderActive = () => {
+    toolsHeader.classList.add('second-active');
+    toolsHeaderSpanSecond.classList.add('second-text-active');
+    toolsHeaderSpanFirst.classList.add('first-text-active');
+  }
+
+  gsap.fromTo(toolsHeader, {}, { toolsHeaderActive,
+    scrollTrigger: {
+      trigger: '.tools',
+      start: 'top 60%'
+    }})
