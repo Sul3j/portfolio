@@ -400,3 +400,21 @@ gsap.fromTo(
     },
   }
 );
+
+const projectHeader = document.querySelector(".projects-header-text");
+
+const addProjectHeaderActive = () => {
+  projectHeader.classList.add("projects-header-text-active");
+};
+
+gsap.fromTo(
+  projectHeader,
+  {},
+  {
+    addProjectHeaderActive,
+    scrollTrigger: {
+      trigger: ".projects",
+      start: "top 65%",
+    },
+  }
+);
