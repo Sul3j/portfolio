@@ -274,3 +274,111 @@ gsap.fromTo(
     },
   }
 );
+
+const bootstrapIcon = document.querySelector(".icon-bootstrap");
+
+gsap.fromTo(
+  bootstrapIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
+
+const gitIcon = document.querySelector(".icon-git");
+
+gsap.fromTo(
+  gitIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
+
+const npmIcon = document.querySelector(".icon-npm");
+
+gsap.fromTo(
+  npmIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
+
+const sassIcon = document.querySelector(".icon-sass");
+
+gsap.fromTo(
+  sassIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
+
+const githubIcon = document.querySelector(".icon-github");
+
+gsap.fromTo(
+  githubIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
+
+const figmaIcon = document.querySelector(".icon-figma");
+
+gsap.fromTo(
+  figmaIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 50%"
+    },
+  }
+);
