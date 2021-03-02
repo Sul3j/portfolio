@@ -382,3 +382,21 @@ gsap.fromTo(
     },
   }
 );
+
+const form = document.querySelector("form");
+
+gsap.fromTo(
+  form.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: .3,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: "form",
+      start: "top 65%"
+    },
+  }
+);
