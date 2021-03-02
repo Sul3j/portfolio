@@ -219,10 +219,12 @@ body{
             font-size: 20px;
           }
         }
-
-        .profession-active {
-          box-shadow: inset 196px 0 0 0 #000;
+        .profession::before{
+          width: 196px;
+          height: 34px;
+          top: 24px;
         }
+        
       }
       .welcome-header {
         width: 530px;

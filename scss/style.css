@@ -268,9 +268,10 @@ body header .welcome-header .header-name-active {
   body header .header-logo .profession span {
     font-size: 20px;
   }
-  body header .header-logo .profession-active {
-    -webkit-box-shadow: inset 196px 0 0 0 #000;
-            box-shadow: inset 196px 0 0 0 #000;
+  body header .header-logo .profession::before {
+    width: 196px;
+    height: 34px;
+    top: 24px;
   }
   body header .welcome-header {
     width: 530px;
