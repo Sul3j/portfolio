@@ -1,121 +1,276 @@
-
-const menuBtn = document.querySelector('.hamburger'); 
-const menu = document.querySelector('.navigation');
-const menuOption = document.querySelectorAll('.menu-option');
-const hamburgerMenu = document.querySelector('#hamburger-menu');
-
+const menuBtn = document.querySelector(".hamburger");
+const menu = document.querySelector(".navigation");
+const menuOption = document.querySelectorAll(".menu-option");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
 
 let isOpen = false;
 
-menuBtn.addEventListener('click', () => { 
-  menuBtn.classList.toggle('hamburger--active'); 
-  if(isOpen){
-    menu.style.left = '100%';
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("hamburger--active");
+  if (isOpen) {
+    menu.style.left = "100%";
     isOpen = !isOpen;
   } else {
-    menu.style.left = '0%';
+    menu.style.left = "0%";
     isOpen = !isOpen;
   }
 });
 
 const closeMenu = () => {
-  menuOption.forEach(element => {
-    element.addEventListener('click', () => {
-      menu.style.left = "100%"; 
+  menuOption.forEach((element) => {
+    element.addEventListener("click", () => {
+      menu.style.left = "100%";
       isOpen = !isOpen;
-      hamburgerMenu.classList.remove('hamburger--active');
+      hamburgerMenu.classList.remove("hamburger--active");
     });
   });
-}
+};
 
 closeMenu();
 
 gsap.registerPlugin(ScrollTrigger);
 
-const aboutMeText = document.querySelector('.about-me-text-wrapper');
+const aboutMeText = document.querySelector(".about-me-text-wrapper");
 
-gsap.fromTo(aboutMeText, {y: '+=100', opacity: 0}, {y: 0, 
-opacity: 1, stagger: 0.2, duration: 1.5, ease: 'easeInOut',
-scrollTrigger: {
-  trigger: '.about-me-text-wrapper',
-  start: 'top 65%' 
-}})
+gsap.fromTo(
+  aboutMeText,
+  { y: "+=100", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".about-me-text-wrapper",
+      start: "top 65%",
+    },
+  }
+);
 
-const aboutMeHeader = document.querySelector('.about-me-header');
+const aboutMeHeader = document.querySelector(".about-me-header");
 
 const addClass = () => {
-  aboutMeHeader.classList.add('active');
-}
+  aboutMeHeader.classList.add("active");
+};
 
-gsap.fromTo(aboutMeHeader, {}, { addClass,
-  scrollTrigger: {
-    trigger: '.about-me-text-wrapper',
-    start: 'top 65%' 
-  }})
+gsap.fromTo(
+  aboutMeHeader,
+  {},
+  {
+    addClass,
+    scrollTrigger: {
+      trigger: ".about-me-text-wrapper",
+      start: "top 65%",
+    },
+  }
+);
 
-const profession = document.querySelector('.profession');
+const profession = document.querySelector(".profession");
 
 const professionActive = () => {
-  profession.classList.add('profession-active');
-}
+  profession.classList.add("profession-active");
+};
 
-gsap.fromTo(profession, {}, { professionActive,
-  scrollTrigger: {
-    trigger: 'header',
-    start: 'top 1%' 
-  }})
-
-  const headerName = document.querySelector('.header-name');
-
-  const headerNameActive = () => {
-    headerName.classList.add('header-name-active');
-  }
-  gsap.fromTo(headerName, {}, { headerNameActive,
+gsap.fromTo(
+  profession,
+  {},
+  {
+    professionActive,
     scrollTrigger: {
-      trigger: 'header',
-      start: 'top 1%' 
-    }})
-
-  const formHeader = document.querySelector('.contact-me');
-
-  const formHeaderActive = () => {
-    formHeader.classList.add('contact-me-active');
+      trigger: "header",
+      start: "top 1%",
+    },
   }
+);
 
-  gsap.fromTo(formHeader, {}, { formHeaderActive,
+const headerName = document.querySelector(".header-name");
+
+const headerNameActive = () => {
+  headerName.classList.add("header-name-active");
+};
+gsap.fromTo(
+  headerName,
+  {},
+  {
+    headerNameActive,
     scrollTrigger: {
-      trigger: '.form',
-      start: 'top 60%'
-    }})
-
-  const skillsHeader = document.querySelector('.skills-header-span');
-  const skillsHeaderSpanFirst = document.querySelector('.skills-header-span-first');
-  const skillsHeaderSpanSecond = document.querySelector('.skills-header-span-second');
-  
-  const skillsHeaderActive = () => {
-    skillsHeader.classList.add('skills-header-span-active');
-    skillsHeaderSpanSecond.classList.add('skills-header-span-second-active');
-    skillsHeaderSpanFirst.classList.add('skills-header-span-first-active');
+      trigger: "header",
+      start: "top 1%",
+    },
   }
+);
 
-  gsap.fromTo(skillsHeader, {}, { skillsHeaderActive,
+const formHeader = document.querySelector(".contact-me");
+
+const formHeaderActive = () => {
+  formHeader.classList.add("contact-me-active");
+};
+
+gsap.fromTo(
+  formHeader,
+  {},
+  {
+    formHeaderActive,
     scrollTrigger: {
-      trigger: '.skills',
-      start: 'top 60%'
-    }})
-
-  const toolsHeader = document.querySelector('.second');
-  const toolsHeaderSpanFirst = document.querySelector('.first-text');
-  const toolsHeaderSpanSecond = document.querySelector('.second-text');
-
-  const toolsHeaderActive = () => {
-    toolsHeader.classList.add('second-active');
-    toolsHeaderSpanSecond.classList.add('second-text-active');
-    toolsHeaderSpanFirst.classList.add('first-text-active');
+      trigger: ".form",
+      start: "top 60%",
+    },
   }
+);
 
-  gsap.fromTo(toolsHeader, {}, { toolsHeaderActive,
+const skillsHeader = document.querySelector(".skills-header-span");
+const skillsHeaderSpanFirst = document.querySelector(
+  ".skills-header-span-first"
+);
+const skillsHeaderSpanSecond = document.querySelector(
+  ".skills-header-span-second"
+);
+
+const skillsHeaderActive = () => {
+  skillsHeader.classList.add("skills-header-span-active");
+  skillsHeaderSpanSecond.classList.add("skills-header-span-second-active");
+  skillsHeaderSpanFirst.classList.add("skills-header-span-first-active");
+};
+
+gsap.fromTo(
+  skillsHeader,
+  {},
+  {
+    skillsHeaderActive,
     scrollTrigger: {
-      trigger: '.tools',
-      start: 'top 60%'
-    }})
+      trigger: ".skills",
+      start: "top 50%",
+    },
+  }
+);
+
+const toolsHeader = document.querySelector(".second");
+const toolsHeaderSpanFirst = document.querySelector(".first-text");
+const toolsHeaderSpanSecond = document.querySelector(".second-text");
+
+const toolsHeaderActive = () => {
+  toolsHeader.classList.add("second-active");
+  toolsHeaderSpanSecond.classList.add("second-text-active");
+  toolsHeaderSpanFirst.classList.add("first-text-active");
+};
+
+gsap.fromTo(
+  toolsHeader,
+  {},
+  {
+    toolsHeaderActive,
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top 60%",
+    },
+  }
+);
+
+const angularIcon = document.querySelector(".icon-angular");
+
+gsap.fromTo(
+  angularIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
+
+const typescriptIcon = document.querySelector(".icon-typescript");
+
+gsap.fromTo(
+  typescriptIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
+
+const javascriptIcon = document.querySelector(".icon-javascript");
+
+gsap.fromTo(
+  javascriptIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
+
+const nodeIcon = document.querySelector(".icon-node");
+
+gsap.fromTo(
+  nodeIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
+
+const nestIcon = document.querySelector(".icon-nest");
+
+gsap.fromTo(
+  nestIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
+
+const postgreIcon = document.querySelector(".icon-postgre");
+
+gsap.fromTo(
+  postgreIcon.children,
+  { y: "+=50", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "easeInOut",
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 50%"
+    },
+  }
+);
