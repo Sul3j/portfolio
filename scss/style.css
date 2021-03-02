@@ -8,7 +8,6 @@ body {
 }
 
 body header {
-  background-color: #fff;
   width: 100vw;
   height: 100vh;
 }
@@ -27,7 +26,6 @@ body header .header-logo {
 }
 
 body header .header-logo .name {
-  background-color: #fff;
   margin-top: 0;
   padding: 0;
   height: 22px;
@@ -38,33 +36,45 @@ body header .header-logo .name {
 }
 
 body header .header-logo .profession {
-  -webkit-box-shadow: inset 0 0 0 #000;
-          box-shadow: inset 0 0 0 #000;
+  overflow: hidden;
   height: 28px;
   padding-left: 3px;
-  -webkit-transition: -webkit-box-shadow ease-out 0.6s;
-  transition: -webkit-box-shadow ease-out 0.6s;
-  transition: box-shadow ease-out 0.6s;
-  transition: box-shadow ease-out 0.6s, -webkit-box-shadow ease-out 0.6s;
-  outline: none;
 }
 
 body header .header-logo .profession span {
-  -webkit-transition: color ease-out 0.6s;
-  transition: color ease-out 0.6s;
-  color: #000;
+  -webkit-transition: 2s;
+  transition: 2s;
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
-}
-
-body header .header-logo .profession-active {
-  -webkit-box-shadow: inset 158px 0 0 0 #000;
-          box-shadow: inset 158px 0 0 0 #000;
-}
-
-body header .header-logo .profession-active span {
   color: #fff;
+}
+
+body header .header-logo .profession::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 158px;
+  height: 28px;
+  background-color: #000;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+body header .header-logo .profession-active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background-color: #000;
 }
 
 body header .hamburger {
