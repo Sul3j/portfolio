@@ -219,7 +219,7 @@ body{
             font-size: 20px;
           }
         }
-        .profession::before{
+        .profession::before {
           width: 196px;
           height: 34px;
           top: 24px;
@@ -296,10 +296,9 @@ body{
             font-size: 23px;
           }
         }
-        .profession-active {
-          box-shadow: inset 226px 0 0 0 #000;
+        .profession::before {
+          width: 226px;
         }
-      }
     }
     
     .navigation-menu  {
@@ -337,4 +336,4 @@ body{
       }
     }
   }
-}
+  }}

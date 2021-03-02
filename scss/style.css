@@ -333,18 +333,17 @@ body header .welcome-header .header-name-active {
   body header .header-logo .profession span {
     font-size: 23px;
   }
-  body header .header-logo .profession-active {
-    -webkit-box-shadow: inset 226px 0 0 0 #000;
-            box-shadow: inset 226px 0 0 0 #000;
+  body header .header-logo .profession::before {
+    width: 226px;
   }
-  body .navigation-menu {
+  body header .navigation-menu {
     right: 3%;
     width: 590px !important;
   }
-  body .navigation-menu li {
+  body header .navigation-menu li {
     font-size: 22px !important;
   }
-  body .navigation-menu li .link {
+  body header .navigation-menu li .link {
     display: block;
     -webkit-box-shadow: inset 0 0 0 #000;
             box-shadow: inset 0 0 0 #000;
@@ -353,23 +352,23 @@ body header .welcome-header .header-name-active {
     outline: none;
     padding: 2px;
   }
-  body .navigation-menu li .link:hover {
+  body header .navigation-menu li .link:hover {
     -webkit-box-shadow: inset 100px 0 0 0 #000;
             box-shadow: inset 100px 0 0 0 #000;
     color: #fff;
   }
-  body .navigation-menu li img {
+  body header .navigation-menu li img {
     height: 24px !important;
   }
-  body .welcome-header {
+  body header .welcome-header {
     width: 870px !important;
     top: 36% !important;
   }
-  body .welcome-header h1 {
+  body header .welcome-header h1 {
     font-size: 82px !important;
     line-height: 94px !important;
   }
-  body .welcome-header .header-name {
+  body header .welcome-header .header-name {
     padding: 8px 12px 6px 6px !important;
   }
 }
