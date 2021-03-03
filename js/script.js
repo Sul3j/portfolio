@@ -43,7 +43,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".about-me-text-wrapper",
-      start: "top 65%",
+      start: "top 30%",
     },
   }
 );
@@ -61,7 +61,7 @@ gsap.fromTo(
     addClass,
     scrollTrigger: {
       trigger: ".about-me-text-wrapper",
-      start: "top 65%",
+      start: "top 30%",
     },
   }
 );
