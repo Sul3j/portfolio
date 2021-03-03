@@ -114,7 +114,7 @@ gsap.fromTo(
     formHeaderActive,
     scrollTrigger: {
       trigger: ".form",
-      start: "top 60%",
+      start: "top 30%",
     },
   }
 );
@@ -396,7 +396,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: "form",
-      start: "top 65%"
+      start: "top 30%"
     },
   }
 );
