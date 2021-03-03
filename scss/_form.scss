@@ -130,7 +130,15 @@ body {
             font-size: 20px;
             padding: 2px;
             font-family: 'Gothic A1', sans-serif;
+            transition: .3s;
           }
+
+          .submit-button:hover {
+            background-color: #fff;
+            color: #000;
+            font-weight: 600;
+          }
+
         }
       }
 }
