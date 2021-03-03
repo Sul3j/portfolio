@@ -65,10 +65,10 @@ body header .header-logo .profession::before {
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
 }
 
 body header .header-logo .profession-active::before {
@@ -237,16 +237,17 @@ body header .welcome-header .header-name {
   display: inline-block;
   -webkit-box-shadow: inset 0 0 0 #000;
           box-shadow: inset 0 0 0 #000;
-  color: #000;
+  color: #fff;
   padding: 3px 6px 2px 6px;
   -webkit-transition: ease-out .6s;
   transition: ease-out .6s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 body header .welcome-header .header-name-active {
   -webkit-box-shadow: inset 316px 0 0 #000;
           box-shadow: inset 316px 0 0 #000;
-  color: #fff;
 }
 
 @media (min-width: 540px) {
