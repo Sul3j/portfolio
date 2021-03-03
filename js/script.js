@@ -34,7 +34,7 @@ const aboutMeText = document.querySelector(".about-me-text-wrapper");
 
 gsap.fromTo(
   aboutMeText,
-  { y: "+=100", opacity: 0 },
+  { y: "+=80", opacity: 0 },
   {
     y: 0,
     opacity: 1,
