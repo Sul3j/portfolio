@@ -414,7 +414,7 @@ gsap.fromTo(
     addProjectHeaderActive,
     scrollTrigger: {
       trigger: ".projects",
-      start: "top 65%",
+      start: "top 30%",
     },
   }
 );
