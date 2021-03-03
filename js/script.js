@@ -140,7 +140,7 @@ gsap.fromTo(
     skillsHeaderActive,
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%",
+      start: "top 30%",
     },
   }
 );
@@ -162,7 +162,7 @@ gsap.fromTo(
     toolsHeaderActive,
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 60%",
+      start: "top 30%",
     },
   }
 );
@@ -180,7 +180,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -198,7 +198,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -216,7 +216,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -234,7 +234,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -252,7 +252,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -270,7 +270,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".skills",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -288,7 +288,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -306,7 +306,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -324,7 +324,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -342,7 +342,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -360,7 +360,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
@@ -378,7 +378,7 @@ gsap.fromTo(
     ease: "easeInOut",
     scrollTrigger: {
       trigger: ".tools",
-      start: "top 50%"
+      start: "top 30%"
     },
   }
 );
