@@ -1,0 +1,33 @@
+<nav class="navbar col-xl-12">
+    <a class="navbar-brand" href="#header">
+      <img class="navbar__logo" src="../../assets/logo.svg" />
+    </a>
+    <ul class="navbar__menu d-none d-md-flex">
+      <li class="navbar__menu-element d-block">
+        <label class="navbar__language-change">
+          <i class="fas fa-globe navbar__language-icon"></i>
+          <select
+            class="navbar__language-select"
+          >
+            <option value="pl-PL" class="navbar__language-option">PL</option>
+            <option value="en-US" class="navbar__language-option">EN</option>
+          </select>
+        </label>
+      </li>
+      <li class="navbar__menu-element d-block">
+        <a href="#about" class="navbar__menu-link">o mnie</a>
+      </li>
+      <li class="navbar__menu-element d-block">
+        <a href="#skills" class="navbar__menu-link">umiejętności</a>
+      </li>
+      <li class="navbar__menu-element d-block">
+        <a href="#projects" class="navbar__menu-link">
+          projekty
+        </a>
+      </li>
+      <li class="navbar__btn">
+        <a href="#contact" class="btn btn-primary navbar__menu-btn">kontakt</a>
+      </li>
+    </ul>
+    <app-hamburger class="d-md-none"></app-hamburger>
+  </nav>
