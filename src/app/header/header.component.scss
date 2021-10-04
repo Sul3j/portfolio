@@ -107,6 +107,8 @@
             {
                 font-size: 24px;
                 border-radius: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }
@@ -116,6 +118,13 @@
 {
     .header
     {
+        .header__header
+        {
+            .header__header-first, .header__header-second
+            {
+                font-size: 57px;
+            }
+        }
         .header__description
         {
             padding-right: 15%;
@@ -133,3 +142,4 @@
         }
     }
 }
+
