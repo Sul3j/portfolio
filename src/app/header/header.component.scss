@@ -1,0 +1,53 @@
+@import '../../variables';
+
+.header
+{
+    .header__header
+    {
+        color: $color-fourth;
+        .header__header-first, .header__header-second
+        {
+            font-size: 36px;
+        }
+    }
+    .header__description
+    {
+        color: $color-third;
+        padding-right: 20%;
+        .header__description-text
+        {
+            font-size: 14px;
+            .header__technology
+            {
+                color: $color-fourth;
+            }
+        }
+    }
+    .header__button-wrapper
+    {
+        .header__button
+        {
+            background: $color-third;
+            color: $color-first;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            &:hover
+            {
+                outline: none;
+                background: $color-fourth; 
+            }
+        }
+    }
+
+    .header__image-wrapper
+    {
+        height: auto;
+        .header__image
+        {
+            width: 80%;
+        }
+    }
+}
