@@ -1,0 +1,42 @@
+<button
+  class="hamburger"
+  id="hamburger-menu"
+  aria-label="Menu"
+  (click)="menuToggle()"
+  [class]="activeProperty"
+>
+  <span class="hamburger__container" tabindex="-1">
+    <span class="hamburger__bars"></span>
+  </span>
+</button>
+
+<div [class]="menuIsActive">
+  <ul class="menu__list">
+    <li
+      *ngFor="let option of options; let i = index"
+      class="menu__option"
+      (click)="menuToggle()"
+    >
+      <a [href]="option[1]" class="menu__option-link">
+        <p class="menu__option-name">{{ option[0] }}</p>
+      </a>
+    </li>
+    <li class="menu__option">
+      <a
+        class="btn btn-primary menu__contact"
+        href="#contact"
+        (click)="menuToggle()"
+        >{{ "contact" }}</a
+      >
+    </li>
+    <li class="menu__option">
+      <label class="menu__language-change">
+        <i class="fas fa-globe menu__language-icon"></i>
+        <select class="menu__language-select">
+          <option value="pl-PL" class="menu__language-option">Polish</option>
+          <option value="en-US" class="menu__language-option">English</option>
+        </select>
+      </label>
+    </li>
+  </ul>
+</div>
