@@ -143,3 +143,41 @@
     }
 }
 
+@media (min-width: 1400px)
+{
+    .header
+    {
+        .header__description
+        {
+            padding-right: 10%;
+            .header__description-text
+            {
+                font-size: 20px;
+            }
+            
+        }
+        .header__image-wrapper
+        {
+            height: 100vh;
+            padding-bottom: 10%;
+            .header__image
+            {
+                width: 100%;
+                height: fit-content;
+            }
+        }
+        .header__button-wrapper
+        {
+            .header__button
+            {
+                font-size: 26px;
+                border-radius: 30px;
+            }
+        }
+
+        .header__image-wrapper
+        {
+            padding-bottom: 30%;
+        }
+    }
+}
