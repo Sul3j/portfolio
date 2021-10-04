@@ -111,3 +111,25 @@
         }
     }
 }
+
+@media (min-width: 992px)
+{
+    .header
+    {
+        .header__description
+        {
+            padding-right: 15%;
+            
+        }
+        .header__image-wrapper
+        {
+            height: 100vh;
+            padding-bottom: 10%;
+            .header__image
+            {
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
+}
