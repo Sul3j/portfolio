@@ -1,0 +1,56 @@
+@import '../../variables';
+
+.skills
+{
+    .skills__header
+    {    
+        .skills__header-content
+        {
+            width: fit-content;
+            .skills__header-text
+            {
+                color: $color-fourth;
+                &::after
+                {
+                    content: "";
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: $color-second;
+                    
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+
+    .skills__skills
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 200px;
+        
+        .iconify
+        {
+            color: $color-third;
+            font-size: 50px;
+            padding: 5px;
+            transition: color 0.5s;
+            &:hover
+            {
+                color: $color-fourth;
+            }
+        }
+        
+    }
+
+    .skills__image-wrapper
+    {
+        .skills__image
+        {
+            width: 100%;
+        }
+    }
+}
