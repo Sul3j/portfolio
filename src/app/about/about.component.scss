@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.about
+{
+    .about__header
+    {    
+        .about__header-content
+        {
+            width: fit-content;
+            .about__header-text
+            {
+                color: $color-fourth;
+                &::after
+                {
+                    content: "";
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: $color-second;
+                    
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+    .about__text-wrapper
+    {
+        .about__text
+        {
+            color: $color-third;
+            .about__link
+            {
+                color: $color-fifth;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .about__image-wrapper
+    {
+        .about__image
+        {
+            width: 100%;
+        } 
+    }
+}
