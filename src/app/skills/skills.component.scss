@@ -136,3 +136,28 @@
         }
     }
 }
+
+@media(min-width: 1200px)
+{
+    .skills
+    {
+        .skills__skills
+        {
+            height: 300px;      
+            .iconify
+            {
+               
+                font-size: 70px;
+                
+            }
+            
+        }
+        .skills__image-wrapper
+        {
+            .skills__image
+            {
+                width: 80%;
+            }
+        }
+    }
+}
