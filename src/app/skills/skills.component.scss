@@ -72,3 +72,42 @@
         }
     }
 }
+
+@media(min-width: 768px)
+{
+    .skills
+    {
+        .skills__header
+        {    
+            .skills__header-content
+            {
+                .skills__header-text
+                {
+                    font-size: 42px;
+                    &::after
+                    {
+                        height: 8px;
+                    }
+                }
+            }
+        }
+        .skills__skills
+        {
+            
+            .iconify
+            {
+               
+                font-size: 70px;
+                
+            }
+            
+        }
+        .skills__image-wrapper
+        {
+            .skills__image
+            {
+                width: 80%;
+            }
+        }
+    }
+}
