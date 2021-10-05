@@ -75,7 +75,7 @@
     }
 }
 
-@media(min-width: 768px)
+@media(min-width: 992px)
 {
     .about
     {
@@ -84,8 +84,30 @@
             .about__text
             {
                 margin: 0;
-                font-size: 18px;
             }
+        }
+    }
+}
+
+@media(min-width: 1200px)
+{
+    .about
+    {
+        .about__text-wrapper
+        {
+            .about__text
+            {
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+
+        .about__image-wrapper
+        {
+            .about__image
+            {
+                width: 80%;
+            } 
         }
     }
 }
