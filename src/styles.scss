@@ -11,3 +11,8 @@
     font-family: $font-family;
     overflow-x: hidden;
 }
+
+html
+{
+    scroll-behavior: smooth;
+}
