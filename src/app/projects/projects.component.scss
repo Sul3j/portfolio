@@ -1,0 +1,102 @@
+@import '../../variables';
+
+.projects
+{
+    min-height: 70vh;
+    padding-bottom: 5vh;
+    .projects__header
+    {    
+        .projects__header-content
+        {
+            width: fit-content;
+            .projects__header-text
+            {
+                color: $color-fourth;
+                &::after
+                {
+                    content: "";
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: $color-second;
+                    
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+
+    .projects__card
+    {
+        background-color: $color-second;
+        border: none;
+        border-radius: 0;
+        .projects__title
+        {
+            color: $color-fourth;
+            position: relative;
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 0;
+        }
+        .projects__text
+        {
+            padding: 10%;
+            padding-bottom: 0;
+            color: $color-third;
+            margin-bottom: 0;
+        }
+        .projects__tags
+        {
+            padding: 10%;
+            padding-top: 0;
+            padding-left: calc(10% - 8px);
+            .projects__tag
+            {
+                font-size: 15px;
+                margin-left: 8px;
+                margin-top: 6px;
+                background-color: $color-third;
+                color: $color-fourth;
+                font-weight: 500;
+                border: none;
+            }
+        }
+
+        .projects__buttons
+        {
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5%;
+            .projects__button
+            {
+                height: 55px;
+                width: 55px;
+                padding: 0;
+                border-radius: 50%;
+                background-color: $color-second;
+                border: 1px solid $color-fourth;
+                .projects__icon
+                {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $color-fourth;
+                }
+
+                &:hover
+                {
+                    background-color: $color-third;
+                    
+                    .projects__icon
+                    {
+                        color: $color-second;
+                    }
+                }
+            }
+        }
+    }
+}
