@@ -39,7 +39,7 @@
             text-align: center;
             padding-top: 10%;
             margin-bottom: 0;
-            font-size: 30px;
+            font-size: 1.6em;
         }
         .projects__text
         {
@@ -78,14 +78,14 @@
                 width: 55px;
                 padding: 0;
                 border-radius: 50%;
+                border: 2px solid $color-third;
                 background-color: $color-second;
-                border: 1px solid $color-fourth;
                 .projects__icon
                 {
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
-                    color: $color-fourth;
+                    color: $color-third;
                 }
 
                 &:hover
