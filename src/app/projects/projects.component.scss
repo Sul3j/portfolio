@@ -39,6 +39,7 @@
             text-align: center;
             padding-top: 10%;
             margin-bottom: 0;
+            font-size: 30px;
         }
         .projects__text
         {
@@ -94,6 +95,27 @@
                     .projects__icon
                     {
                         color: $color-second;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px)
+{
+    .projects
+    {
+        .projects__header
+        {    
+            .projects__header-content
+            {
+                .projects__header-text
+                {
+                    font-size: 42px;
+                    &::after
+                    {
+                        height: 8px;
                     }
                 }
             }
