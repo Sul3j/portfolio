@@ -78,14 +78,15 @@
                 width: 55px;
                 padding: 0;
                 border-radius: 50%;
-                border: 2px solid $color-third;
-                background-color: $color-second;
+                border: none;
+                background-color: $color-sixth;
+                border: none;
                 .projects__icon
                 {
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
-                    color: $color-third;
+                    color: $color-fifth;
                 }
 
                 &:hover
