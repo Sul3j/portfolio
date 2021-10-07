@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  @HostListener('window:load', ['$event'])
+  offPreLoader(){
+    setTimeout(() => {
+      const preloader = document.querySelector('.preloader') as any;
+      preloader.style.display = 'none';
+    }, 1500)
+  }
 }
