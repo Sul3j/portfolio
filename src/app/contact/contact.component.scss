@@ -90,19 +90,24 @@
     }
     .contact__send
     { 
+      &:hover
+      {
+        background-color: $color-fourth;
+      }
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       background-color: $color-third;
-      color: $color-fourth;
+      color: $color-first;
       border: none;
-      font-weight: 600;
+      font-weight: 800;
       text-transform: uppercase;
       font-size: 16px;
       .contact__send-icon
       {
-        color: $color-fourth;
+        color: $color-first;
         transform: rotate(45deg);
+        margin-bottom: 3px;
       }
     }
   }
@@ -110,6 +115,12 @@
   {
     .contact__footer-social
     {
+      display: block;
+      transition: 0.5s background-color;
+      &:hover
+      {
+        background-color: $color-fourth;
+      }
       .contact__footer-wrap
       {
         background-color: $color-fourth;
@@ -145,6 +156,87 @@
         padding-left: 3px;
         padding-right: 3px;
       }
+    }
+  }
+}
+
+@media(min-width: 768px)
+{
+  .contact
+  {
+    .contact__header
+        {    
+            .contact__header-content
+            {
+                .contact__header-text
+                {
+                    font-size: 42px;
+                    &::after
+                    {
+                        height: 8px;
+                    }
+                }
+            }
+        }
+  }
+}
+
+@media(min-width: 992px)
+{
+  .contact
+  {
+    .contact__form 
+    {
+      .contact__consent
+      {
+        .contact__checkbox-wrap
+        {
+          margin-bottom: 8px;
+        }
+      }
+      .contact__send
+      {
+        font-size: 18px;
+        .contact__send-icon
+        {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .contact__seperator
+    {
+      .contact__seperator-line
+      {
+        width: 3px;
+        height: 100%;
+        background-color: $color-second;
+      }
+    }
+    .contact__footer
+    {
+      .contact__footer-social
+      {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: $color-third;
+        border-radius: 30px;
+        text-decoration: none;
+        .contact__footer-tagname
+        {
+          width: calc(100% - 50px);
+          text-align: center;
+          line-height: 50px;
+          font-size: 24px;
+          color: $color-first;
+          font-weight: 600;
+        }
+      }
+    } 
+    .contact__footer-footer
+    {
+      font-size: 18px;
     }
   }
 }
