@@ -1,0 +1,76 @@
+<section class="contact row justify-content-center">
+    <div class="contact__header col-12 pl-4 mt-5 mb-3 pt-4 pl-lg-0 mb-lg-3 pt-md-5 pb-lg-3">
+        <div class="contact__header-content">
+            <h2 class="contact__header-text">Kontakt</h2>
+        </div>
+    </div>
+    <form class="col-12 pl-4 pr-4 contact__form">
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="contact__label">nazwa</label>
+            <input type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="contact__label">e-mail</label>
+            <input type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-success">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="contact__label">temat</label>
+            <input type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="contact__label">wiadomość</label>
+            <textarea class="form-control contact__textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <small id="emailHelp" class="form-text text-success">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="d-flex col-12 contact__consent">
+            <div class="contact__checkbox-wrap">
+                <div class="contact__checkbox-center">
+                  <input
+                    type="checkbox"
+                    class="contact__form-checkbox"
+                    #checkbox
+                    (click)="checkboxChecked()"
+                  />
+                </div>
+            </div>
+            <p class="pl-3 contact__consent-text">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <a href="#" class="contact__consent-link">Polityką prywatności i plików cookie</a>.
+            </p>
+        </div>
+        <button class="btn btn-secondary contact__send">wyślij wiadomość <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send contact__send-icon"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></button>
+    </form>
+    <hr>
+    <section class="contact__footer col-12 col-md-8 d-flex justify-content-between pl-4 pr-4 mb-4 mt-5">
+        <a class="contact__footer-social">
+            <div class="contact__footer-wrap d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github contact__footer-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+        </a>
+        <a class="contact__footer-social">
+            <div class="contact__footer-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin contact__footer-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+        </a>
+        <a class="contact__footer-social">
+            <div class="contact__footer-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail contact__footer-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+        </a>
+        <a class="contact__footer-social">
+            <div class="contact__footer-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter contact__footer-icon"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </div>
+        </a>
+    </section>
+    <section class="contact__footer-footer col-12">
+        <p class="contact__footer-text">Design & Development by Szymon Sulejczak</p>
+        <p class="contact__footer-member">member of <svg class="contact__footer-sitero" width="100" height="45" viewBox="0 0 180 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.4943 33.1084C48.4943 34.1879 49.3319 35.0582 50.4139 35.0582C51.4957 35.0582 52.3334 34.1879 52.3334 33.1084V18.5892C52.3334 17.5099 51.4957 16.6742 50.4139 16.6742C49.3319 16.6742 48.4943 17.5099 48.4943 18.5892V33.1084ZM50.4139 14.6548C51.6703 14.6548 52.6824 13.6102 52.6824 12.3916C52.6824 11.7914 52.4434 11.2157 52.018 10.7913C51.5925 10.3669 51.0156 10.1284 50.4139 10.1284C49.8123 10.1284 49.2352 10.3669 48.8099 10.7913C48.3844 11.2157 48.1455 11.7914 48.1455 12.3916C48.1455 13.6102 49.1575 14.6548 50.4139 14.6548ZM56.8103 20.5392H58.0666V26.8412C58.0666 31.8898 61.4868 35.0582 65.9889 35.0582C66.9661 35.0582 67.7688 34.2573 67.7688 33.2477C67.7688 32.2728 66.9661 31.472 65.9889 31.472C63.6158 31.472 61.9058 29.9053 61.9058 26.8412V20.5392H65.9889C66.9661 20.5392 67.7688 19.7382 67.7688 18.7633C67.7688 17.7537 66.9661 16.9876 65.9889 16.9876H61.9058V14.3762C61.9058 13.2969 61.0681 12.4612 59.9861 12.4612C58.9043 12.4612 58.0666 13.2969 58.0666 14.3762V16.9876H56.8103C55.8331 16.9876 55.0303 17.7537 55.0303 18.7633C55.0303 19.7382 55.8331 20.5392 56.8103 20.5392ZM78.9925 35.0931C81.9591 35.0931 84.3671 33.8048 85.6933 32.2032C86.0424 31.8201 86.2515 31.3327 86.2515 30.9497C86.2515 29.8702 85.4491 29.1045 84.3671 29.1045C83.6341 29.1045 83.2504 29.5221 82.6918 29.9748C82.2172 30.477 81.6435 30.8753 81.0067 31.145C80.37 31.4148 79.6842 31.5498 78.9925 31.5415C75.9562 31.5415 73.618 28.9999 73.618 25.8663C73.618 22.6979 75.9912 20.1909 78.9925 20.1909C79.7604 20.1909 80.7027 20.3997 81.2959 20.8176L77.073 25.7619C76.7589 26.0753 76.6543 26.4929 76.6543 26.9108C76.6543 27.9204 77.422 28.6518 78.4689 28.6518C78.9925 28.6518 79.4113 28.4775 79.7951 28.025L85.1697 21.6532C85.5886 21.1658 85.7281 20.748 85.7281 20.2605C85.7281 19.7034 85.4491 19.1813 85.03 18.7982C83.8435 17.7188 81.7146 16.6394 78.9925 16.6394C73.6877 16.6394 69.7441 20.7131 69.7441 25.8663C69.7441 31.0195 73.7226 35.0931 78.9925 35.0931ZM89.8359 33.1084C89.8359 34.1879 90.6734 35.0582 91.7552 35.0582C92.8372 35.0582 93.6747 34.1879 93.6747 33.1084V24.7868C93.6747 21.7229 95.3849 20.1909 97.6882 20.1909C98.6654 20.1909 99.4682 19.3901 99.4682 18.4152C99.4682 17.4053 98.6654 16.6394 97.6882 16.6394C93.1513 16.6394 89.8359 19.8426 89.8359 24.7868V33.1084ZM110.109 35.0931C115.449 35.0931 119.357 31.0195 119.357 25.8663C119.357 20.7131 115.449 16.6394 110.109 16.6394C104.804 16.6394 100.861 20.7131 100.861 25.8663C100.861 31.0195 104.804 35.0931 110.109 35.0931ZM110.109 31.5415C107.038 31.5415 104.734 28.965 104.734 25.8663C104.734 22.7327 107.038 20.1909 110.109 20.1909C113.18 20.1909 115.484 22.7327 115.484 25.8663C115.484 28.965 113.18 31.5415 110.109 31.5415ZM123.962 35.0582C125.288 35.0582 126.37 33.9789 126.37 32.6557C126.37 31.298 125.288 30.2534 123.962 30.2534C122.636 30.2534 121.554 31.298 121.554 32.6557C121.554 33.9789 122.636 35.0582 123.962 35.0582ZM130.359 33.1084C130.359 34.1879 131.196 35.0582 132.278 35.0582C133.36 35.0582 134.197 34.1879 134.197 33.1084V24.6128C134.197 21.7229 135.977 20.1909 138.211 20.1909C140.445 20.1909 142.224 21.7229 142.224 24.6128V33.1084C142.224 34.1879 143.062 35.0582 144.144 35.0582C145.191 35.0582 146.063 34.1879 146.063 33.1084V24.7521C146.063 19.7731 142.608 16.6394 138.211 16.6394C133.814 16.6394 130.359 19.7731 130.359 24.7521V33.1084ZM159.016 35.0931C161.983 35.0931 164.391 33.8048 165.717 32.2032C166.066 31.8201 166.276 31.3327 166.276 30.9497C166.276 29.8702 165.473 29.1045 164.391 29.1045C163.658 29.1045 163.274 29.5221 162.716 29.9748C162.241 30.477 161.667 30.8753 161.031 31.145C160.394 31.4148 159.708 31.5498 159.016 31.5415C155.98 31.5415 153.642 28.9999 153.642 25.8663C153.642 22.6979 156.015 20.1909 159.016 20.1909C159.784 20.1909 160.726 20.3997 161.32 20.8176L157.097 25.7619C156.783 26.0753 156.678 26.4929 156.678 26.9108C156.678 27.9204 157.446 28.6518 158.493 28.6518C159.016 28.6518 159.435 28.4775 159.819 28.025L165.194 21.6532C165.612 21.1658 165.752 20.748 165.752 20.2605C165.752 19.7034 165.473 19.1813 165.054 18.7982C163.868 17.7188 161.739 16.6394 159.016 16.6394C153.712 16.6394 149.768 20.7131 149.768 25.8663C149.768 31.0195 153.747 35.0931 159.016 35.0931ZM169.041 20.5392H170.298V26.8412C170.298 31.8898 173.718 35.0582 178.221 35.0582C179.198 35.0582 180 34.2573 180 33.2477C180 32.2728 179.198 31.472 178.221 31.472C175.847 31.472 174.137 29.9053 174.137 26.8412V20.5392H178.221C179.198 20.5392 180 19.7382 180 18.7633C180 17.7537 179.198 16.9876 178.221 16.9876H174.137V14.3762C174.137 13.2969 173.299 12.4612 172.218 12.4612C171.135 12.4612 170.298 13.2969 170.298 14.3762V16.9876H169.041C168.064 16.9876 167.261 17.7537 167.261 18.7633C167.261 19.7382 168.064 20.5392 169.041 20.5392Z" fill="#577B97"/>
+            <path d="M22.3285 0C16.4066 0 10.7272 2.34772 6.53985 6.52671C2.35246 10.7057 0 16.3736 0 22.2837C0 28.1936 2.35246 33.8614 6.53985 38.0405C10.7272 42.2196 16.4066 44.5671 22.3285 44.5671C28.2503 44.5671 33.9297 42.2196 38.1172 38.0405C42.3043 33.8614 44.6568 28.1936 44.6568 22.2837C44.6568 16.3736 42.3043 10.7057 38.1172 6.52671C33.9297 2.34772 28.2503 0 22.3285 0ZM29.6224 8.46254V11.9722L19.8409 16.6598L29.6224 21.3248V24.8344L15.6459 18.0448V15.2535L29.6224 8.46254ZM15.6602 19.9201L29.6316 26.7149V29.5062L15.6602 36.3013V32.7917L25.4461 28.1149L15.6602 23.4378V19.9201Z" fill="#577B97"/>
+            </svg> collective
+        </p>
+    </section>
+</section>
