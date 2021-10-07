@@ -12,7 +12,31 @@
     overflow-x: hidden;
 }
 
-html
-{
+html {
     scroll-behavior: smooth;
-}
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $color-third;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $color-third;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $color-third;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
