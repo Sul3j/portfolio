@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hamburger',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translateService: TranslateService) { }
 
   ngOnInit(): void {
   }
@@ -33,6 +34,8 @@ export class HamburgerComponent implements OnInit {
     }
   }
 
-  
+  public selectLanguage(event: any) {
+    this.translateService.use(event.target.value);
+  }
 
 }

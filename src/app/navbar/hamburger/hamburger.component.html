@@ -18,7 +18,7 @@
       (click)="menuToggle()"
     >
       <a [href]="option[1]" class="menu__option-link">
-        <p class="menu__option-name">{{ option[0] }}</p>
+        <p class="menu__option-name">{{ option[0] | translate}}</p>
       </a>
     </li>
     <li class="menu__option">
@@ -26,13 +26,13 @@
         class="btn btn-primary menu__contact"
         href="#contact"
         (click)="menuToggle()"
-        >{{ "contact" }}</a
+        >{{ 'contact' | translate }}</a
       >
     </li>
     <li class="menu__option">
       <label class="menu__language-change">
         <i class="fas fa-globe menu__language-icon"></i>
-        <select class="menu__language-select">
+        <select class="menu__language-select" (change)="selectLanguage($event)">
           <option value="pl-PL" class="menu__language-option">Polish</option>
           <option value="en-US" class="menu__language-option">English</option>
         </select>
