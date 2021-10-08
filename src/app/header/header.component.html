@@ -6,13 +6,12 @@
         </div>
         <div class="header__description mt-sm-3 mt-xl-4">
             <p class="header__description-text">
-                Witaj na mojej stronie jestem programistą webowym zajmującym się tworzeniem aplikacji w 
-                nowoczesnych technologiach. Na codzień tworze aplikacje w <span class="header__technology">ASP.NET Core</span> oraz frameworku 
+                {{ 'header_description' | translate }} <span class="header__technology">ASP.NET Core</span> {{ 'header_and' | translate }}
                 <span class="header__technology">Angular</span>
             </p>
         </div>
         <div class="header__button-wrapper mt-sm-3 mt-xl-4">
-            <a type="button" class="btn btn-secondary header__button" href="#contact">Napisz do mnie</a>
+            <a type="button" class="btn btn-secondary header__button" href="#contact">{{ 'header_contact_button' | translate }}</a>
         </div>
     </div>
     <div class="col-12 col-lg-6 col-xl-7">
