@@ -1,7 +1,7 @@
 <section class="about d-flex flex-wrap row" id="about">
     <div class="about__header order-1 col-12 pl-4 mt-5 pt-4 pl-lg-0 mb-lg-3 pt-md-5 pb-lg-3">
         <div class="about__header-content">
-            <h2 class="about__header-text">O mnie</h2>
+            <h2 class="about__header-text">{{ 'about' | translate }}</h2>
         </div>
     </div>
     <div class="about__image-wrapper order-3 col-12 pl-4 mt-3 order-lg-2 col-lg-7 mt-lg-4 pl-lg-0 mb-lg-4">
@@ -9,13 +9,8 @@
     </div>
     <div class="about__text-wrapper order-2 col-12 pl-4 mt-2 order-lg-3 col-lg-5 mt-lg-3 pl-lg-3 mb-lg-4">
         <p class="about__text">
-            Mam na imię Szymon i interesuję się tworzeniem aplikacji webowych. 
-            Moja przygoda z programowaniem rozpoczeła się w 2018 roku na kierunku 
-            informatycznym w technikum. Obecnie jestem studentem informatyki a w 
-            wolnych chwilach tworze aplikacje webowe w organizacji <a class="about__link" href="https://sitero.net/">sitero.net</a> z 
-            grupą znajomych. Programowanie jest moją pasją, ale interesuje mnie 
-            także rozwój osobisty i doskonalenie umiejętności miękkich. W wolnym 
-            czasie lubie czytać książki i uprawiać sport.
+            {{ 'about_text_first' | translate }} <a class="about__link" href="https://sitero.net/">sitero.net</a> 
+            {{ 'about_text_second' | translate }}
         </p>
     </div>
 </section>
