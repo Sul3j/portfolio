@@ -14,24 +14,24 @@ export class ProjectsComponent implements OnInit {
 
   cards: any[] = [
     {
-      title: 'e-commerce app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tellus vitae lobortis condimentum. Fusce efficitur eleifend quam id interdum. Ut nec lorem sapien. Nunc id magna aliquam, hendrerit diam eget, facilisis leo. Suspendisse massa ante, lobortis quis ex nec, laoreet tincidunt sem. Nam lobortis porta elit, sed tempor tortor laoreet eu.',
+      title: 'project_title_first',
+      description: 'project_description_first',
       code: '#',
       app: '#',
       yt: '#',
       tags: ['TypeScript', 'ASP.NET Core', 'C#', 'Angular', 'MySQL', 'SCSS'],
     },
     {
-      title: 'chat app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tellus vitae lobortis condimentum. Fusce efficitur eleifend quam id interdum. Ut nec lorem sapien. Nunc id magna aliquam, hendrerit diam eget, facilisis leo. Suspendisse massa ante, lobortis quis ex nec, laoreet tincidunt sem. Nam lobortis porta elit, sed tempor tortor laoreet eu.',
+      title: 'project_title_second',
+      description: 'project_description_second',
       code: '#',
       app: '#',
       yt: '#',
       tags: ['TypeScript', 'ASP.NET Core', 'C#', 'Angular', 'MySQL', 'SCSS'],
     },
     {
-      title: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tellus vitae lobortis condimentum. Fusce efficitur eleifend quam id interdum. Ut nec lorem sapien. Nunc id magna aliquam, hendrerit diam eget, facilisis leo. Suspendisse massa ante, lobortis quis ex nec, laoreet tincidunt sem. Nam lobortis porta elit, sed tempor tortor laoreet eu.',
+      title: 'project_title_third',
+      description: 'project_description_third',
       code: '#',
       app: '#',
       yt: '#',
