@@ -11,7 +11,7 @@ export class ConnectBackendService {
   constructor(private http: HttpClient) { }
 
   onSendService(model: any, headers: HttpHeaders): Subscription {
-    return this.http.post<any>('http://localhost:80/', 
+    return this.http.post<any>('https://localhost:80/', 
            JSON.stringify(model), {
              headers: headers
             }).subscribe();
