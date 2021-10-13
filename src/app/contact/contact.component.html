@@ -5,25 +5,28 @@
         </div>
     </div>
     <form #contactForm="ngForm" (ngSubmit)="send()" class="col-12 col-lg-6 pl-4 pr-4 pl-lg-0 contact__form">
+        <div class="contact__alert alert alert-danger text-center" role="alert">
+            {{ 'contact_alert' | translate }}
+        </div>
         <div class="form-group">
             <label for="exampleInputEmail1" class="contact__label">{{ 'contact_name' | translate }}</label>
             <input [(ngModel)]="model.name" name="name" type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-danger"></small>
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1" class="contact__label">e-mail</label>
             <input [(ngModel)]="model.email" name="email" type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-success">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-success"></small>
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1" class="contact__label">{{ 'contact_subject' | translate }}</label>
             <input [(ngModel)]="model.subject" name="subject" type="email" class="form-control contact__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-danger"></small>
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1" class="contact__label">{{ 'contact_message' | translate }}</label>
             <textarea [(ngModel)]="model.message" name="message" class="form-control contact__textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <small id="emailHelp" class="form-text text-success">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-success"></small>
         </div>
         <div class="d-flex col-12 contact__consent">
             <div class="contact__checkbox-wrap">

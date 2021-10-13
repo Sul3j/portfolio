@@ -22,5 +22,6 @@
     "contact_message_button": "send message",
     "contact_author": "Design & Development by Szymon Sulejczak",
     "contact_member": "członek zespołu",
-    "contact_collective": "" 
+    "contact_collective": "",
+    "contact_alert": "The contact form does not work, contact me via email!" 
 }

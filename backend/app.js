@@ -23,7 +23,7 @@ app.all("/*", function(req, res, next){
 const PASSWORD = process.env.PASSWORD;
 
 app.get('/', (req, res) => {
-  res.send(`${__dirname}/public/index.html`)
+  res.send(`${__dirname}/public/index.html`);
 })
 
 app.post('/', function (req, res) {
@@ -62,10 +62,7 @@ app.post('/', function (req, res) {
 
 const httpOptions = {
     cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
-    key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem'))
-  }
+    key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
+}
 
-https.createServer(httpOptions, app)
-  .listen(80, () => {
-    console.log(`Serving the public directory at https`);
-  })
+https.createServer(httpOptions, app).listen();
