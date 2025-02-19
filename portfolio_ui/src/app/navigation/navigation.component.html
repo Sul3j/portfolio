@@ -1,0 +1,45 @@
+
+<nav class="navbar" [class.active]="isMenuOpen">
+    <div class="navbar__container">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#about" class="navbar__link">O mnie</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#projects" class="navbar__link">Projekty</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#info" class="navbar__link">Informacje</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__link navbar__link--special">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<button class="navbar__hamburger"
+        (click)="toggleMenu()"
+        [class.active]="isMenuOpen"
+        aria-label="Menu">
+    <i class="fa-solid" [class.fa-bars]="!isMenuOpen" [class.fa-xmark]="isMenuOpen"></i>
+</button>
+
+<div class="menu-overlay"
+    [class.active]="isMenuOpen"
+    (click)="isMenuOpen = false"></div>
+
+<div class="navbar__mobile" [class.active]="isMenuOpen">
+    <div class="navbar__mobile-content">
+        <nav class="navbar__mobile-nav">
+            <a href="#about" class="navbar__mobile-link">O mnie</a>
+            <a href="#projects" class="navbar__mobile-link">Projekty</a>
+            <a href="#info" class="navbar__mobile-link">Informacje</a>
+            <a href="#contact" class="navbar__mobile-link navbar__mobile-link--special">Kontakt</a>
+        </nav>
+    </div>
+</div>
