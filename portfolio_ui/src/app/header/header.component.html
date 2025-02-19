@@ -1,28 +1,30 @@
 <section class="header">
     <div class="header__container">
         <div class="header__row">
-            <h1 class="header__title">
-                Witaj na mojej stronie
-                <span class="header__subtitle">Cieszę się, że tu jesteś</span>
-            </h1>
+            <div class="header__content">
+                <h1 class="header__title">
+                    Witaj na mojej stronie
+                    <span class="header__subtitle">Cieszę się, że tu jesteś</span>
+                </h1>
+                
+                <p class="header__lead">
+                    Nazywam się Szymon Sulejczak. Jestem programistą oraz nauczycielem przedmiotów informatycznych.
+                </p>
 
-            <p class="header_lead">
-                Nazywam się Szymon Sulejczak. Jestem programistą oraz nauczycielem przedmiotów informatycznych.
-            </p>
+                <div class="header__cta">
+                    <a href="#about" class="header__button header__button--primary">O mnie</a>
+                    <a href="#contact" class="header__button header__button--secondary">Kontakt</a>
+                </div>
 
-            <div class="header__cta">
-                <a href="#about" class="header__button header__button--primary">O mnie</a>
-                <a href="#contact" class="header__button header__button--secondary">Kontakt</a>
-            </div>
-
-            <div class="header__social">
-                <a *ngFor="let social of socials"
-                    [href]="social.link"
-                    class="header__social-icon"
-                    target="_blank"
-                    rel="noopener">
-                    <i [class]="social.icon"></i>
-                </a>
+                <div class="header__social">
+                    <a *ngFor="let social of socials" 
+                       [href]="social.link" 
+                       class="header__social-icon"
+                       target="_blank" 
+                       rel="noopener">
+                        <i [class]="social.icon"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
