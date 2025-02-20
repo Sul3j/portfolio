@@ -1,0 +1,26 @@
+<section class="technologies">
+    <div class="container">
+        <div class="technologies__orb"></div>
+        
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="technologies__content p-4">
+                    <h2 class="technologies__heading mb-4">Technologie<br>i Umiejętności</h2>
+                    <p class="technologies__description">
+                        Moją pasją jest tworzenie nowoczesnych i bezpiecznych  aplikacji w technologiach takich jak Django, Angular i JavaScript. Dodatkowo, jako nauczyciel, dzielę się swoją pasją, ucząc podstaw programowania i baz danych.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="technologies__grid">
+                    <div class="technologies__item" *ngFor="let className of classes; let i = index" 
+                         [style.--delay]="i*0.05+'s'">
+                        <div class="technologies__icon-wrapper">
+                            <i [class]="className"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
