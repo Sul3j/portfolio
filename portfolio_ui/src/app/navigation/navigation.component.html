@@ -36,10 +36,10 @@
 <div class="navbar__mobile" [class.active]="isMenuOpen">
     <div class="navbar__mobile-content">
         <nav class="navbar__mobile-nav">
-            <a href="#about" class="navbar__mobile-link">O mnie</a>
-            <a href="#technologies" class="navbar__mobile-link">Technologie</a>
-            <a href="#projects" class="navbar__mobile-link">Projekty</a>
-            <a href="#contact" class="navbar__mobile-link navbar__mobile-link--special">Kontakt</a>
+            <a href="#about" class="navbar__mobile-link" (click)="closeMenu()">O mnie</a>
+            <a href="#technologies" class="navbar__mobile-link" (click)="closeMenu()">Technologie</a>
+            <a href="#projects" class="navbar__mobile-link" (click)="closeMenu()">Projekty</a>
+            <a href="#contact" class="navbar__mobile-link navbar__mobile-link--special" (click)="closeMenu()">Kontakt</a>
         </nav>
     </div>
 </div>
