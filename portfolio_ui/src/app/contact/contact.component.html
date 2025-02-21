@@ -1,36 +1,35 @@
-<section class="contact" id="contact">
+<section class="contact">
     <div class="container">
         <div class="contact__content">
             <h2 class="contact__heading">Masz pytania?</h2>
             <p class="contact__subtitle">Skontaktuj się ze mną</p>
             
-            <form class="contact__form">
+            <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="contact__form">
                 <div class="contact__input-group">
                     <div class="contact__input-wrapper">
-                        <input type="text" class="contact__input" required>
+                        <input type="text" class="contact__input" formControlName="firstName" required>
                         <label class="contact__label">Imię</label>
                     </div>
                     <div class="contact__input-wrapper">
-                        <input type="text" class="contact__input" required>
+                        <input type="text" class="contact__input" formControlName="lastName" required>
                         <label class="contact__label">Nazwisko</label>
                     </div>
                 </div>
-
+            
                 <div class="contact__input-wrapper">
-                    <input type="email" class="contact__input" required>
+                    <input type="email" class="contact__input" formControlName="email" required>
                     <label class="contact__label">Adres email</label>
                 </div>
-
+            
                 <div class="contact__input-wrapper">
-                    <textarea class="contact__input contact__input--message" required></textarea>
+                    <textarea class="contact__input contact__input--message" formControlName="message" required></textarea>
                     <label class="contact__label">Twoja wiadomość</label>
                 </div>
-
-                <button type="submit" class="contact__submit-btn">
+            
+                <button type="submit" class="contact__submit-btn" [disabled]="contactForm.invalid">
                     <span>Wyślij wiadomość</span>
-                    <div class="contact__hover-effect"></div>
                 </button>
-            </form>
+            </form>            
         </div>
     </div>
 </section>
