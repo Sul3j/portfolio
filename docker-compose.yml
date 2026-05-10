@@ -28,14 +28,7 @@ services:
       - media_files:/app/media
     expose:
       - "8000"
-    command: >
-      sh -c "python manage.py migrate --noinput &&
-             python manage.py collectstatic --noinput &&
-             gunicorn portfolio_django.wsgi:application
-               --bind 0.0.0.0:8000
-               --workers 3
-               --timeout 60
-               --access-logfile -"
+    command: sh -c "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn portfolio_django.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 60 --access-logfile -"
 
   frontend:
     build:
