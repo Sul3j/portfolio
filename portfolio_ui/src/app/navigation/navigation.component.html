@@ -2,21 +2,21 @@
 <nav class="navbar" [class.active]="isMenuOpen">
     <div class="navbar__container">
         <div class="navbar__logo">
-            <i class="fa-solid fa-code"></i>
+            <a [routerLink]="['/']"><i class="fa-solid fa-code"></i></a>
         </div>
 
         <ul class="navbar__menu">
             <li class="navbar__item">
-                <a href="#about" class="navbar__link">O mnie</a>
+                <a [routerLink]="['/']" fragment="about" class="navbar__link">O mnie</a>
             </li>
             <li class="navbar__item">
-                <a href="#technologies" class="navbar__link">Technologie</a>
+                <a [routerLink]="['/']" fragment="technologies" class="navbar__link">Technologie</a>
             </li>
             <li class="navbar__item">
-                <a href="#projects" class="navbar__link">Projekty</a>
+                <a [routerLink]="['/']" fragment="projects" class="navbar__link">Projekty</a>
             </li>
             <li class="navbar__item">
-                <a href="#contact" class="navbar__link navbar__link--special">Kontakt</a>
+                <a [routerLink]="['/']" fragment="contact" class="navbar__link navbar__link--special">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -36,10 +36,10 @@
 <div class="navbar__mobile" [class.active]="isMenuOpen">
     <div class="navbar__mobile-content">
         <nav class="navbar__mobile-nav">
-            <a href="#about" class="navbar__mobile-link" (click)="closeMenu()">O mnie</a>
-            <a href="#technologies" class="navbar__mobile-link" (click)="closeMenu()">Technologie</a>
-            <a href="#projects" class="navbar__mobile-link" (click)="closeMenu()">Projekty</a>
-            <a href="#contact" class="navbar__mobile-link navbar__mobile-link--special" (click)="closeMenu()">Kontakt</a>
+            <a [routerLink]="['/']" fragment="about" class="navbar__mobile-link" (click)="closeMenu()">O mnie</a>
+            <a [routerLink]="['/']" fragment="technologies" class="navbar__mobile-link" (click)="closeMenu()">Technologie</a>
+            <a [routerLink]="['/']" fragment="projects" class="navbar__mobile-link" (click)="closeMenu()">Projekty</a>
+            <a [routerLink]="['/']" fragment="contact" class="navbar__mobile-link navbar__mobile-link--special" (click)="closeMenu()">Kontakt</a>
         </nav>
     </div>
 </div>

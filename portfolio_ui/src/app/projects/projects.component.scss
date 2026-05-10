@@ -224,16 +224,50 @@
             }
         }
 
-        &--github {
+        &--detail {
+            background: linear-gradient(45deg, #4ac5aa, #328170);
+            color: #fff;
+
+            &:hover {
+                background: linear-gradient(45deg, #328170, #4ac5aa);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(74, 197, 170, 0.3);
+            }
+        }
+
+        &--preview {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: #fff;
-            
+
             &:hover {
                 background: rgba(255, 255, 255, 0.15);
                 transform: translateY(-2px);
                 box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
             }
+        }
+
+        &--github {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.15);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    &__status {
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 3rem 0;
+        font-size: 1.1rem;
+
+        &--error {
+            color: #e57373;
         }
     }
 

@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -29,7 +30,7 @@ export class ContactComponent {
   sendEmail() {
     if (this.contactForm.invalid) return;
 
-    this.http.post('https://szymonsulejczak.com/email/send', this.contactForm.value).subscribe({
+    this.http.post(`${environment.apiUrl}/contact/`, this.contactForm.value).subscribe({
       next: () => {
         this.successMessage = 'Wiadomość wysłana pomyślnie!';
         this.errorMessage = '';
